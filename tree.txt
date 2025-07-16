@@ -1,0 +1,2936 @@
+.
+├── Cargo.lock
+├── README.md
+├── dist
+│   ├── assets
+│   │   ├── index-B8EFa0CV.css
+│   │   └── index-DwobgMY9.js
+│   └── index.html
+├── docker-compose.yml
+├── dockerfile
+├── gen
+│   └── schemas
+│       ├── acl-manifests.json
+│       ├── capabilities.json
+│       ├── desktop-schema.json
+│       └── linux-schema.json
+├── index.html
+├── node_modules
+│   ├── @ampproject
+│   │   └── remapping
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── dist
+│   │       │   ├── remapping.mjs
+│   │       │   ├── remapping.mjs.map
+│   │       │   ├── remapping.umd.js
+│   │       │   ├── remapping.umd.js.map
+│   │       │   └── types
+│   │       │       ├── build-source-map-tree.d.ts
+│   │       │       ├── remapping.d.ts
+│   │       │       ├── source-map-tree.d.ts
+│   │       │       ├── source-map.d.ts
+│   │       │       └── types.d.ts
+│   │       └── package.json
+│   ├── @esbuild
+│   │   └── linux-x64
+│   │       ├── README.md
+│   │       ├── bin
+│   │       │   └── esbuild
+│   │       └── package.json
+│   ├── @jridgewell
+│   │   ├── gen-mapping
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── gen-mapping.mjs
+│   │   │   │   ├── gen-mapping.mjs.map
+│   │   │   │   ├── gen-mapping.umd.js
+│   │   │   │   └── gen-mapping.umd.js.map
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── gen-mapping.ts
+│   │   │   │   ├── set-array.ts
+│   │   │   │   ├── sourcemap-segment.ts
+│   │   │   │   └── types.ts
+│   │   │   └── types
+│   │   │       ├── gen-mapping.d.cts
+│   │   │       ├── gen-mapping.d.cts.map
+│   │   │       ├── gen-mapping.d.mts
+│   │   │       ├── gen-mapping.d.mts.map
+│   │   │       ├── set-array.d.cts
+│   │   │       ├── set-array.d.cts.map
+│   │   │       ├── set-array.d.mts
+│   │   │       ├── set-array.d.mts.map
+│   │   │       ├── sourcemap-segment.d.cts
+│   │   │       ├── sourcemap-segment.d.cts.map
+│   │   │       ├── sourcemap-segment.d.mts
+│   │   │       ├── sourcemap-segment.d.mts.map
+│   │   │       ├── types.d.cts
+│   │   │       ├── types.d.cts.map
+│   │   │       ├── types.d.mts
+│   │   │       └── types.d.mts.map
+│   │   ├── resolve-uri
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── resolve-uri.mjs
+│   │   │   │   ├── resolve-uri.mjs.map
+│   │   │   │   ├── resolve-uri.umd.js
+│   │   │   │   ├── resolve-uri.umd.js.map
+│   │   │   │   └── types
+│   │   │   │       └── resolve-uri.d.ts
+│   │   │   └── package.json
+│   │   ├── sourcemap-codec
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── dist
+│   │   │   │   ├── sourcemap-codec.mjs
+│   │   │   │   ├── sourcemap-codec.mjs.map
+│   │   │   │   ├── sourcemap-codec.umd.js
+│   │   │   │   └── sourcemap-codec.umd.js.map
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── scopes.ts
+│   │   │   │   ├── sourcemap-codec.ts
+│   │   │   │   ├── strings.ts
+│   │   │   │   └── vlq.ts
+│   │   │   └── types
+│   │   │       ├── scopes.d.cts
+│   │   │       ├── scopes.d.cts.map
+│   │   │       ├── scopes.d.mts
+│   │   │       ├── scopes.d.mts.map
+│   │   │       ├── sourcemap-codec.d.cts
+│   │   │       ├── sourcemap-codec.d.cts.map
+│   │   │       ├── sourcemap-codec.d.mts
+│   │   │       ├── sourcemap-codec.d.mts.map
+│   │   │       ├── strings.d.cts
+│   │   │       ├── strings.d.cts.map
+│   │   │       ├── strings.d.mts
+│   │   │       ├── strings.d.mts.map
+│   │   │       ├── vlq.d.cts
+│   │   │       ├── vlq.d.cts.map
+│   │   │       ├── vlq.d.mts
+│   │   │       └── vlq.d.mts.map
+│   │   └── trace-mapping
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── dist
+│   │       │   ├── trace-mapping.mjs
+│   │       │   ├── trace-mapping.mjs.map
+│   │       │   ├── trace-mapping.umd.js
+│   │       │   └── trace-mapping.umd.js.map
+│   │       ├── package.json
+│   │       ├── src
+│   │       │   ├── binary-search.ts
+│   │       │   ├── by-source.ts
+│   │       │   ├── flatten-map.ts
+│   │       │   ├── resolve.ts
+│   │       │   ├── sort.ts
+│   │       │   ├── sourcemap-segment.ts
+│   │       │   ├── strip-filename.ts
+│   │       │   ├── trace-mapping.ts
+│   │       │   └── types.ts
+│   │       └── types
+│   │           ├── binary-search.d.cts
+│   │           ├── binary-search.d.cts.map
+│   │           ├── binary-search.d.mts
+│   │           ├── binary-search.d.mts.map
+│   │           ├── by-source.d.cts
+│   │           ├── by-source.d.cts.map
+│   │           ├── by-source.d.mts
+│   │           ├── by-source.d.mts.map
+│   │           ├── flatten-map.d.cts
+│   │           ├── flatten-map.d.cts.map
+│   │           ├── flatten-map.d.mts
+│   │           ├── flatten-map.d.mts.map
+│   │           ├── resolve.d.cts
+│   │           ├── resolve.d.cts.map
+│   │           ├── resolve.d.mts
+│   │           ├── resolve.d.mts.map
+│   │           ├── sort.d.cts
+│   │           ├── sort.d.cts.map
+│   │           ├── sort.d.mts
+│   │           ├── sort.d.mts.map
+│   │           ├── sourcemap-segment.d.cts
+│   │           ├── sourcemap-segment.d.cts.map
+│   │           ├── sourcemap-segment.d.mts
+│   │           ├── sourcemap-segment.d.mts.map
+│   │           ├── strip-filename.d.cts
+│   │           ├── strip-filename.d.cts.map
+│   │           ├── strip-filename.d.mts
+│   │           ├── strip-filename.d.mts.map
+│   │           ├── trace-mapping.d.cts
+│   │           ├── trace-mapping.d.cts.map
+│   │           ├── trace-mapping.d.mts
+│   │           ├── trace-mapping.d.mts.map
+│   │           ├── types.d.cts
+│   │           ├── types.d.cts.map
+│   │           ├── types.d.mts
+│   │           └── types.d.mts.map
+│   ├── @rollup
+│   │   └── rollup-linux-x64-gnu
+│   │       ├── README.md
+│   │       ├── package.json
+│   │       └── rollup.linux-x64-gnu.node
+│   ├── @sveltejs
+│   │   ├── acorn-typescript
+│   │   │   ├── LICENSE.md
+│   │   │   ├── README.md
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── vite-plugin-svelte
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   ├── index.js
+│   │   │   │   ├── plugins
+│   │   │   │   │   ├── compile-module.js
+│   │   │   │   │   ├── compile.js
+│   │   │   │   │   ├── configure.js
+│   │   │   │   │   ├── hot-update.js
+│   │   │   │   │   ├── load-compiled-css.js
+│   │   │   │   │   ├── load-custom.js
+│   │   │   │   │   ├── preprocess.js
+│   │   │   │   │   └── setup-optimizer.js
+│   │   │   │   ├── preprocess.js
+│   │   │   │   ├── public.d.ts
+│   │   │   │   ├── types
+│   │   │   │   │   ├── compile.d.ts
+│   │   │   │   │   ├── id.d.ts
+│   │   │   │   │   ├── log.d.ts
+│   │   │   │   │   ├── options.d.ts
+│   │   │   │   │   ├── plugin-api.d.ts
+│   │   │   │   │   └── vite-plugin-svelte-stats.d.ts
+│   │   │   │   └── utils
+│   │   │   │       ├── compile.js
+│   │   │   │       ├── constants.js
+│   │   │   │       ├── dependencies.js
+│   │   │   │       ├── error.js
+│   │   │   │       ├── hash.js
+│   │   │   │       ├── id.js
+│   │   │   │       ├── load-svelte-config.js
+│   │   │   │       ├── log.js
+│   │   │   │       ├── options.js
+│   │   │   │       ├── preprocess.js
+│   │   │   │       ├── sourcemaps.js
+│   │   │   │       ├── svelte-version.js
+│   │   │   │       ├── vite-plugin-svelte-stats.js
+│   │   │   │       └── watch.js
+│   │   │   └── types
+│   │   │       ├── index.d.ts
+│   │   │       └── index.d.ts.map
+│   │   └── vite-plugin-svelte-inspector
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── package.json
+│   │       ├── src
+│   │       │   ├── debug.js
+│   │       │   ├── index.js
+│   │       │   ├── options.js
+│   │       │   ├── public.d.ts
+│   │       │   ├── runtime
+│   │       │   │   ├── Inspector.svelte
+│   │       │   │   └── load-inspector.js
+│   │       │   └── utils.js
+│   │       └── types
+│   │           ├── index.d.ts
+│   │           └── index.d.ts.map
+│   ├── @tauri-apps
+│   │   ├── api
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── LICENSE_APACHE-2.0
+│   │   │   ├── LICENSE_MIT
+│   │   │   ├── README.md
+│   │   │   ├── app.cjs
+│   │   │   ├── app.d.ts
+│   │   │   ├── app.js
+│   │   │   ├── core.cjs
+│   │   │   ├── core.d.ts
+│   │   │   ├── core.js
+│   │   │   ├── dpi.cjs
+│   │   │   ├── dpi.d.ts
+│   │   │   ├── dpi.js
+│   │   │   ├── event.cjs
+│   │   │   ├── event.d.ts
+│   │   │   ├── event.js
+│   │   │   ├── external
+│   │   │   │   └── tslib
+│   │   │   │       ├── tslib.es6.cjs
+│   │   │   │       └── tslib.es6.js
+│   │   │   ├── image.cjs
+│   │   │   ├── image.d.ts
+│   │   │   ├── image.js
+│   │   │   ├── index.cjs
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   ├── menu
+│   │   │   │   ├── base.cjs
+│   │   │   │   ├── base.d.ts
+│   │   │   │   ├── base.js
+│   │   │   │   ├── checkMenuItem.cjs
+│   │   │   │   ├── checkMenuItem.d.ts
+│   │   │   │   ├── checkMenuItem.js
+│   │   │   │   ├── iconMenuItem.cjs
+│   │   │   │   ├── iconMenuItem.d.ts
+│   │   │   │   ├── iconMenuItem.js
+│   │   │   │   ├── menu.cjs
+│   │   │   │   ├── menu.d.ts
+│   │   │   │   ├── menu.js
+│   │   │   │   ├── menuItem.cjs
+│   │   │   │   ├── menuItem.d.ts
+│   │   │   │   ├── menuItem.js
+│   │   │   │   ├── predefinedMenuItem.cjs
+│   │   │   │   ├── predefinedMenuItem.d.ts
+│   │   │   │   ├── predefinedMenuItem.js
+│   │   │   │   ├── submenu.cjs
+│   │   │   │   ├── submenu.d.ts
+│   │   │   │   └── submenu.js
+│   │   │   ├── menu.cjs
+│   │   │   ├── menu.d.ts
+│   │   │   ├── menu.js
+│   │   │   ├── mocks.cjs
+│   │   │   ├── mocks.d.ts
+│   │   │   ├── mocks.js
+│   │   │   ├── package.json
+│   │   │   ├── path.cjs
+│   │   │   ├── path.d.ts
+│   │   │   ├── path.js
+│   │   │   ├── tray.cjs
+│   │   │   ├── tray.d.ts
+│   │   │   ├── tray.js
+│   │   │   ├── webview.cjs
+│   │   │   ├── webview.d.ts
+│   │   │   ├── webview.js
+│   │   │   ├── webviewWindow.cjs
+│   │   │   ├── webviewWindow.d.ts
+│   │   │   ├── webviewWindow.js
+│   │   │   ├── window.cjs
+│   │   │   ├── window.d.ts
+│   │   │   └── window.js
+│   │   ├── cli
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── Cargo.toml
+│   │   │   ├── LICENSE_APACHE-2.0
+│   │   │   ├── LICENSE_MIT
+│   │   │   ├── README.md
+│   │   │   ├── __tests__
+│   │   │   │   ├── fixtures
+│   │   │   │   │   └── empty
+│   │   │   │   │       ├── dist
+│   │   │   │   │       │   └── index.html
+│   │   │   │   │       └── package.json
+│   │   │   │   └── template.spec.ts
+│   │   │   ├── append-headers.js
+│   │   │   ├── build.rs
+│   │   │   ├── config.schema.json
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   ├── main.d.ts
+│   │   │   ├── main.js
+│   │   │   ├── package.json
+│   │   │   ├── src
+│   │   │   │   └── lib.rs
+│   │   │   └── tauri.js
+│   │   └── cli-linux-x64-gnu
+│   │       ├── README.md
+│   │       ├── cli.linux-x64-gnu.node
+│   │       └── package.json
+│   ├── @types
+│   │   └── estree
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── flow.d.ts
+│   │       ├── index.d.ts
+│   │       └── package.json
+│   ├── acorn
+│   │   ├── CHANGELOG.md
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── bin
+│   │   │   └── acorn
+│   │   ├── dist
+│   │   │   ├── acorn.d.mts
+│   │   │   ├── acorn.d.ts
+│   │   │   ├── acorn.js
+│   │   │   ├── acorn.mjs
+│   │   │   └── bin.js
+│   │   └── package.json
+│   ├── aria-query
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── lib
+│   │   │   ├── ariaPropsMap.js
+│   │   │   ├── domMap.js
+│   │   │   ├── elementRoleMap.js
+│   │   │   ├── etc
+│   │   │   │   └── roles
+│   │   │   │       ├── abstract
+│   │   │   │       │   ├── commandRole.js
+│   │   │   │       │   ├── compositeRole.js
+│   │   │   │       │   ├── inputRole.js
+│   │   │   │       │   ├── landmarkRole.js
+│   │   │   │       │   ├── rangeRole.js
+│   │   │   │       │   ├── roletypeRole.js
+│   │   │   │       │   ├── sectionRole.js
+│   │   │   │       │   ├── sectionheadRole.js
+│   │   │   │       │   ├── selectRole.js
+│   │   │   │       │   ├── structureRole.js
+│   │   │   │       │   ├── widgetRole.js
+│   │   │   │       │   └── windowRole.js
+│   │   │   │       ├── ariaAbstractRoles.js
+│   │   │   │       ├── ariaDpubRoles.js
+│   │   │   │       ├── ariaGraphicsRoles.js
+│   │   │   │       ├── ariaLiteralRoles.js
+│   │   │   │       ├── dpub
+│   │   │   │       │   ├── docAbstractRole.js
+│   │   │   │       │   ├── docAcknowledgmentsRole.js
+│   │   │   │       │   ├── docAfterwordRole.js
+│   │   │   │       │   ├── docAppendixRole.js
+│   │   │   │       │   ├── docBacklinkRole.js
+│   │   │   │       │   ├── docBiblioentryRole.js
+│   │   │   │       │   ├── docBibliographyRole.js
+│   │   │   │       │   ├── docBibliorefRole.js
+│   │   │   │       │   ├── docChapterRole.js
+│   │   │   │       │   ├── docColophonRole.js
+│   │   │   │       │   ├── docConclusionRole.js
+│   │   │   │       │   ├── docCoverRole.js
+│   │   │   │       │   ├── docCreditRole.js
+│   │   │   │       │   ├── docCreditsRole.js
+│   │   │   │       │   ├── docDedicationRole.js
+│   │   │   │       │   ├── docEndnoteRole.js
+│   │   │   │       │   ├── docEndnotesRole.js
+│   │   │   │       │   ├── docEpigraphRole.js
+│   │   │   │       │   ├── docEpilogueRole.js
+│   │   │   │       │   ├── docErrataRole.js
+│   │   │   │       │   ├── docExampleRole.js
+│   │   │   │       │   ├── docFootnoteRole.js
+│   │   │   │       │   ├── docForewordRole.js
+│   │   │   │       │   ├── docGlossaryRole.js
+│   │   │   │       │   ├── docGlossrefRole.js
+│   │   │   │       │   ├── docIndexRole.js
+│   │   │   │       │   ├── docIntroductionRole.js
+│   │   │   │       │   ├── docNoterefRole.js
+│   │   │   │       │   ├── docNoticeRole.js
+│   │   │   │       │   ├── docPagebreakRole.js
+│   │   │   │       │   ├── docPagefooterRole.js
+│   │   │   │       │   ├── docPageheaderRole.js
+│   │   │   │       │   ├── docPagelistRole.js
+│   │   │   │       │   ├── docPartRole.js
+│   │   │   │       │   ├── docPrefaceRole.js
+│   │   │   │       │   ├── docPrologueRole.js
+│   │   │   │       │   ├── docPullquoteRole.js
+│   │   │   │       │   ├── docQnaRole.js
+│   │   │   │       │   ├── docSubtitleRole.js
+│   │   │   │       │   ├── docTipRole.js
+│   │   │   │       │   └── docTocRole.js
+│   │   │   │       ├── graphics
+│   │   │   │       │   ├── graphicsDocumentRole.js
+│   │   │   │       │   ├── graphicsObjectRole.js
+│   │   │   │       │   └── graphicsSymbolRole.js
+│   │   │   │       └── literal
+│   │   │   │           ├── alertRole.js
+│   │   │   │           ├── alertdialogRole.js
+│   │   │   │           ├── applicationRole.js
+│   │   │   │           ├── articleRole.js
+│   │   │   │           ├── bannerRole.js
+│   │   │   │           ├── blockquoteRole.js
+│   │   │   │           ├── buttonRole.js
+│   │   │   │           ├── captionRole.js
+│   │   │   │           ├── cellRole.js
+│   │   │   │           ├── checkboxRole.js
+│   │   │   │           ├── codeRole.js
+│   │   │   │           ├── columnheaderRole.js
+│   │   │   │           ├── comboboxRole.js
+│   │   │   │           ├── complementaryRole.js
+│   │   │   │           ├── contentinfoRole.js
+│   │   │   │           ├── definitionRole.js
+│   │   │   │           ├── deletionRole.js
+│   │   │   │           ├── dialogRole.js
+│   │   │   │           ├── directoryRole.js
+│   │   │   │           ├── documentRole.js
+│   │   │   │           ├── emphasisRole.js
+│   │   │   │           ├── feedRole.js
+│   │   │   │           ├── figureRole.js
+│   │   │   │           ├── formRole.js
+│   │   │   │           ├── genericRole.js
+│   │   │   │           ├── graphicsDocumentRole.js
+│   │   │   │           ├── graphicsObjectRole.js
+│   │   │   │           ├── graphicsSymbolRole.js
+│   │   │   │           ├── gridRole.js
+│   │   │   │           ├── gridcellRole.js
+│   │   │   │           ├── groupRole.js
+│   │   │   │           ├── headingRole.js
+│   │   │   │           ├── imgRole.js
+│   │   │   │           ├── insertionRole.js
+│   │   │   │           ├── linkRole.js
+│   │   │   │           ├── listRole.js
+│   │   │   │           ├── listboxRole.js
+│   │   │   │           ├── listitemRole.js
+│   │   │   │           ├── logRole.js
+│   │   │   │           ├── mainRole.js
+│   │   │   │           ├── markRole.js
+│   │   │   │           ├── marqueeRole.js
+│   │   │   │           ├── mathRole.js
+│   │   │   │           ├── menuRole.js
+│   │   │   │           ├── menubarRole.js
+│   │   │   │           ├── menuitemRole.js
+│   │   │   │           ├── menuitemcheckboxRole.js
+│   │   │   │           ├── menuitemradioRole.js
+│   │   │   │           ├── meterRole.js
+│   │   │   │           ├── navigationRole.js
+│   │   │   │           ├── noneRole.js
+│   │   │   │           ├── noteRole.js
+│   │   │   │           ├── optionRole.js
+│   │   │   │           ├── paragraphRole.js
+│   │   │   │           ├── presentationRole.js
+│   │   │   │           ├── progressbarRole.js
+│   │   │   │           ├── radioRole.js
+│   │   │   │           ├── radiogroupRole.js
+│   │   │   │           ├── regionRole.js
+│   │   │   │           ├── rowRole.js
+│   │   │   │           ├── rowgroupRole.js
+│   │   │   │           ├── rowheaderRole.js
+│   │   │   │           ├── scrollbarRole.js
+│   │   │   │           ├── searchRole.js
+│   │   │   │           ├── searchboxRole.js
+│   │   │   │           ├── separatorRole.js
+│   │   │   │           ├── sliderRole.js
+│   │   │   │           ├── spinbuttonRole.js
+│   │   │   │           ├── statusRole.js
+│   │   │   │           ├── strongRole.js
+│   │   │   │           ├── subscriptRole.js
+│   │   │   │           ├── superscriptRole.js
+│   │   │   │           ├── switchRole.js
+│   │   │   │           ├── tabRole.js
+│   │   │   │           ├── tableRole.js
+│   │   │   │           ├── tablistRole.js
+│   │   │   │           ├── tabpanelRole.js
+│   │   │   │           ├── termRole.js
+│   │   │   │           ├── textboxRole.js
+│   │   │   │           ├── timeRole.js
+│   │   │   │           ├── timerRole.js
+│   │   │   │           ├── toolbarRole.js
+│   │   │   │           ├── tooltipRole.js
+│   │   │   │           ├── treeRole.js
+│   │   │   │           ├── treegridRole.js
+│   │   │   │           └── treeitemRole.js
+│   │   │   ├── index.js
+│   │   │   ├── roleElementMap.js
+│   │   │   ├── rolesMap.js
+│   │   │   └── util
+│   │   │       ├── iterationDecorator.js
+│   │   │       └── iteratorProxy.js
+│   │   └── package.json
+│   ├── axobject-query
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── lib
+│   │   │   ├── AXObjectElementMap.js
+│   │   │   ├── AXObjectRoleMap.js
+│   │   │   ├── AXObjectsMap.js
+│   │   │   ├── elementAXObjectMap.js
+│   │   │   ├── etc
+│   │   │   │   └── objects
+│   │   │   │       ├── AbbrRole.js
+│   │   │   │       ├── AlertDialogRole.js
+│   │   │   │       ├── AlertRole.js
+│   │   │   │       ├── AnnotationRole.js
+│   │   │   │       ├── ApplicationRole.js
+│   │   │   │       ├── ArticleRole.js
+│   │   │   │       ├── AudioRole.js
+│   │   │   │       ├── BannerRole.js
+│   │   │   │       ├── BlockquoteRole.js
+│   │   │   │       ├── BusyIndicatorRole.js
+│   │   │   │       ├── ButtonRole.js
+│   │   │   │       ├── CanvasRole.js
+│   │   │   │       ├── CaptionRole.js
+│   │   │   │       ├── CellRole.js
+│   │   │   │       ├── CheckBoxRole.js
+│   │   │   │       ├── ColorWellRole.js
+│   │   │   │       ├── ColumnHeaderRole.js
+│   │   │   │       ├── ColumnRole.js
+│   │   │   │       ├── ComboBoxRole.js
+│   │   │   │       ├── ComplementaryRole.js
+│   │   │   │       ├── ContentInfoRole.js
+│   │   │   │       ├── DateRole.js
+│   │   │   │       ├── DateTimeRole.js
+│   │   │   │       ├── DefinitionRole.js
+│   │   │   │       ├── DescriptionListDetailRole.js
+│   │   │   │       ├── DescriptionListRole.js
+│   │   │   │       ├── DescriptionListTermRole.js
+│   │   │   │       ├── DetailsRole.js
+│   │   │   │       ├── DialogRole.js
+│   │   │   │       ├── DirectoryRole.js
+│   │   │   │       ├── DisclosureTriangleRole.js
+│   │   │   │       ├── DivRole.js
+│   │   │   │       ├── DocumentRole.js
+│   │   │   │       ├── EmbeddedObjectRole.js
+│   │   │   │       ├── FeedRole.js
+│   │   │   │       ├── FigcaptionRole.js
+│   │   │   │       ├── FigureRole.js
+│   │   │   │       ├── FooterRole.js
+│   │   │   │       ├── FormRole.js
+│   │   │   │       ├── GridRole.js
+│   │   │   │       ├── GroupRole.js
+│   │   │   │       ├── HeadingRole.js
+│   │   │   │       ├── IframePresentationalRole.js
+│   │   │   │       ├── IframeRole.js
+│   │   │   │       ├── IgnoredRole.js
+│   │   │   │       ├── ImageMapLinkRole.js
+│   │   │   │       ├── ImageMapRole.js
+│   │   │   │       ├── ImageRole.js
+│   │   │   │       ├── InlineTextBoxRole.js
+│   │   │   │       ├── InputTimeRole.js
+│   │   │   │       ├── LabelRole.js
+│   │   │   │       ├── LegendRole.js
+│   │   │   │       ├── LineBreakRole.js
+│   │   │   │       ├── LinkRole.js
+│   │   │   │       ├── ListBoxOptionRole.js
+│   │   │   │       ├── ListBoxRole.js
+│   │   │   │       ├── ListItemRole.js
+│   │   │   │       ├── ListMarkerRole.js
+│   │   │   │       ├── ListRole.js
+│   │   │   │       ├── LogRole.js
+│   │   │   │       ├── MainRole.js
+│   │   │   │       ├── MarkRole.js
+│   │   │   │       ├── MarqueeRole.js
+│   │   │   │       ├── MathRole.js
+│   │   │   │       ├── MenuBarRole.js
+│   │   │   │       ├── MenuButtonRole.js
+│   │   │   │       ├── MenuItemCheckBoxRole.js
+│   │   │   │       ├── MenuItemRadioRole.js
+│   │   │   │       ├── MenuItemRole.js
+│   │   │   │       ├── MenuListOptionRole.js
+│   │   │   │       ├── MenuListPopupRole.js
+│   │   │   │       ├── MenuRole.js
+│   │   │   │       ├── MeterRole.js
+│   │   │   │       ├── NavigationRole.js
+│   │   │   │       ├── NoneRole.js
+│   │   │   │       ├── NoteRole.js
+│   │   │   │       ├── OutlineRole.js
+│   │   │   │       ├── ParagraphRole.js
+│   │   │   │       ├── PopUpButtonRole.js
+│   │   │   │       ├── PreRole.js
+│   │   │   │       ├── PresentationalRole.js
+│   │   │   │       ├── ProgressIndicatorRole.js
+│   │   │   │       ├── RadioButtonRole.js
+│   │   │   │       ├── RadioGroupRole.js
+│   │   │   │       ├── RegionRole.js
+│   │   │   │       ├── RootWebAreaRole.js
+│   │   │   │       ├── RowHeaderRole.js
+│   │   │   │       ├── RowRole.js
+│   │   │   │       ├── RubyRole.js
+│   │   │   │       ├── RulerRole.js
+│   │   │   │       ├── SVGRootRole.js
+│   │   │   │       ├── ScrollAreaRole.js
+│   │   │   │       ├── ScrollBarRole.js
+│   │   │   │       ├── SeamlessWebAreaRole.js
+│   │   │   │       ├── SearchBoxRole.js
+│   │   │   │       ├── SearchRole.js
+│   │   │   │       ├── SliderRole.js
+│   │   │   │       ├── SliderThumbRole.js
+│   │   │   │       ├── SpinButtonPartRole.js
+│   │   │   │       ├── SpinButtonRole.js
+│   │   │   │       ├── SplitterRole.js
+│   │   │   │       ├── StaticTextRole.js
+│   │   │   │       ├── StatusRole.js
+│   │   │   │       ├── SwitchRole.js
+│   │   │   │       ├── TabGroupRole.js
+│   │   │   │       ├── TabListRole.js
+│   │   │   │       ├── TabPanelRole.js
+│   │   │   │       ├── TabRole.js
+│   │   │   │       ├── TableHeaderContainerRole.js
+│   │   │   │       ├── TableRole.js
+│   │   │   │       ├── TermRole.js
+│   │   │   │       ├── TextAreaRole.js
+│   │   │   │       ├── TextFieldRole.js
+│   │   │   │       ├── TimeRole.js
+│   │   │   │       ├── TimerRole.js
+│   │   │   │       ├── ToggleButtonRole.js
+│   │   │   │       ├── ToolbarRole.js
+│   │   │   │       ├── TreeGridRole.js
+│   │   │   │       ├── TreeItemRole.js
+│   │   │   │       ├── TreeRole.js
+│   │   │   │       ├── UserInterfaceTooltipRole.js
+│   │   │   │       ├── VideoRole.js
+│   │   │   │       ├── WebAreaRole.js
+│   │   │   │       └── WindowRole.js
+│   │   │   ├── index.js
+│   │   │   └── util
+│   │   │       ├── iterationDecorator.js
+│   │   │       └── iteratorProxy.js
+│   │   └── package.json
+│   ├── clsx
+│   │   ├── clsx.d.mts
+│   │   ├── clsx.d.ts
+│   │   ├── dist
+│   │   │   ├── clsx.js
+│   │   │   ├── clsx.min.js
+│   │   │   ├── clsx.mjs
+│   │   │   ├── lite.js
+│   │   │   └── lite.mjs
+│   │   ├── license
+│   │   ├── package.json
+│   │   └── readme.md
+│   ├── debug
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   └── src
+│   │       ├── browser.js
+│   │       ├── common.js
+│   │       ├── index.js
+│   │       └── node.js
+│   ├── deepmerge
+│   │   ├── changelog.md
+│   │   ├── dist
+│   │   │   ├── cjs.js
+│   │   │   └── umd.js
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── license.txt
+│   │   ├── package.json
+│   │   ├── readme.md
+│   │   └── rollup.config.js
+│   ├── esbuild
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── bin
+│   │   │   └── esbuild
+│   │   ├── install.js
+│   │   ├── lib
+│   │   │   ├── main.d.ts
+│   │   │   └── main.js
+│   │   └── package.json
+│   ├── esm-env
+│   │   ├── CHANGELOG.md
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── browser-fallback.js
+│   │   ├── dev-fallback.js
+│   │   ├── false.js
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── package.json
+│   │   └── true.js
+│   ├── esrap
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── context.js
+│   │   │   ├── index.js
+│   │   │   ├── languages
+│   │   │   │   ├── ts
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── public.d.ts
+│   │   │   │   ├── tsx
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── public.d.ts
+│   │   │   │   └── types.d.ts
+│   │   │   ├── public.d.ts
+│   │   │   └── types.d.ts
+│   │   └── types
+│   │       ├── index.d.ts
+│   │       └── index.d.ts.map
+│   ├── fdir
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── api
+│   │   │   │   ├── async.d.ts
+│   │   │   │   ├── async.js
+│   │   │   │   ├── counter.d.ts
+│   │   │   │   ├── counter.js
+│   │   │   │   ├── functions
+│   │   │   │   │   ├── get-array.d.ts
+│   │   │   │   │   ├── get-array.js
+│   │   │   │   │   ├── group-files.d.ts
+│   │   │   │   │   ├── group-files.js
+│   │   │   │   │   ├── invoke-callback.d.ts
+│   │   │   │   │   ├── invoke-callback.js
+│   │   │   │   │   ├── join-path.d.ts
+│   │   │   │   │   ├── join-path.js
+│   │   │   │   │   ├── push-directory.d.ts
+│   │   │   │   │   ├── push-directory.js
+│   │   │   │   │   ├── push-file.d.ts
+│   │   │   │   │   ├── push-file.js
+│   │   │   │   │   ├── resolve-symlink.d.ts
+│   │   │   │   │   ├── resolve-symlink.js
+│   │   │   │   │   ├── walk-directory.d.ts
+│   │   │   │   │   └── walk-directory.js
+│   │   │   │   ├── queue.d.ts
+│   │   │   │   ├── queue.js
+│   │   │   │   ├── sync.d.ts
+│   │   │   │   ├── sync.js
+│   │   │   │   ├── walker.d.ts
+│   │   │   │   └── walker.js
+│   │   │   ├── builder
+│   │   │   │   ├── api-builder.d.ts
+│   │   │   │   ├── api-builder.js
+│   │   │   │   ├── index.d.ts
+│   │   │   │   └── index.js
+│   │   │   ├── index.cjs
+│   │   │   ├── index.d.cts
+│   │   │   ├── index.d.mts
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   ├── index.mjs
+│   │   │   ├── types.d.ts
+│   │   │   ├── types.js
+│   │   │   ├── utils.d.ts
+│   │   │   └── utils.js
+│   │   └── package.json
+│   ├── is-reference
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   └── index.js
+│   │   └── types
+│   │       ├── index.d.ts
+│   │       └── index.d.ts.map
+│   ├── kleur
+│   │   ├── colors.d.ts
+│   │   ├── colors.js
+│   │   ├── colors.mjs
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── index.mjs
+│   │   ├── license
+│   │   ├── package.json
+│   │   └── readme.md
+│   ├── locate-character
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── index.js
+│   │   │   └── types.d.ts
+│   │   └── types
+│   │       ├── index.d.ts
+│   │       └── index.d.ts.map
+│   ├── magic-string
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── magic-string.cjs.d.ts
+│   │   │   ├── magic-string.cjs.js
+│   │   │   ├── magic-string.cjs.js.map
+│   │   │   ├── magic-string.es.d.mts
+│   │   │   ├── magic-string.es.mjs
+│   │   │   ├── magic-string.es.mjs.map
+│   │   │   ├── magic-string.umd.js
+│   │   │   └── magic-string.umd.js.map
+│   │   └── package.json
+│   ├── ms
+│   │   ├── index.js
+│   │   ├── license.md
+│   │   ├── package.json
+│   │   └── readme.md
+│   ├── nanoid
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── async
+│   │   │   ├── index.browser.cjs
+│   │   │   ├── index.browser.js
+│   │   │   ├── index.cjs
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   ├── index.native.js
+│   │   │   └── package.json
+│   │   ├── bin
+│   │   │   └── nanoid.cjs
+│   │   ├── index.browser.cjs
+│   │   ├── index.browser.js
+│   │   ├── index.cjs
+│   │   ├── index.d.cts
+│   │   ├── index.d.ts
+│   │   ├── index.js
+│   │   ├── nanoid.js
+│   │   ├── non-secure
+│   │   │   ├── index.cjs
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── package.json
+│   │   └── url-alphabet
+│   │       ├── index.cjs
+│   │       ├── index.js
+│   │       └── package.json
+│   ├── picocolors
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── picocolors.browser.js
+│   │   ├── picocolors.d.ts
+│   │   ├── picocolors.js
+│   │   └── types.d.ts
+│   ├── picomatch
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── index.js
+│   │   ├── lib
+│   │   │   ├── constants.js
+│   │   │   ├── parse.js
+│   │   │   ├── picomatch.js
+│   │   │   ├── scan.js
+│   │   │   └── utils.js
+│   │   ├── package.json
+│   │   └── posix.js
+│   ├── postcss
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── lib
+│   │   │   ├── at-rule.d.ts
+│   │   │   ├── at-rule.js
+│   │   │   ├── comment.d.ts
+│   │   │   ├── comment.js
+│   │   │   ├── container.d.ts
+│   │   │   ├── container.js
+│   │   │   ├── css-syntax-error.d.ts
+│   │   │   ├── css-syntax-error.js
+│   │   │   ├── declaration.d.ts
+│   │   │   ├── declaration.js
+│   │   │   ├── document.d.ts
+│   │   │   ├── document.js
+│   │   │   ├── fromJSON.d.ts
+│   │   │   ├── fromJSON.js
+│   │   │   ├── input.d.ts
+│   │   │   ├── input.js
+│   │   │   ├── lazy-result.d.ts
+│   │   │   ├── lazy-result.js
+│   │   │   ├── list.d.ts
+│   │   │   ├── list.js
+│   │   │   ├── map-generator.js
+│   │   │   ├── no-work-result.d.ts
+│   │   │   ├── no-work-result.js
+│   │   │   ├── node.d.ts
+│   │   │   ├── node.js
+│   │   │   ├── parse.d.ts
+│   │   │   ├── parse.js
+│   │   │   ├── parser.js
+│   │   │   ├── postcss.d.mts
+│   │   │   ├── postcss.d.ts
+│   │   │   ├── postcss.js
+│   │   │   ├── postcss.mjs
+│   │   │   ├── previous-map.d.ts
+│   │   │   ├── previous-map.js
+│   │   │   ├── processor.d.ts
+│   │   │   ├── processor.js
+│   │   │   ├── result.d.ts
+│   │   │   ├── result.js
+│   │   │   ├── root.d.ts
+│   │   │   ├── root.js
+│   │   │   ├── rule.d.ts
+│   │   │   ├── rule.js
+│   │   │   ├── stringifier.d.ts
+│   │   │   ├── stringifier.js
+│   │   │   ├── stringify.d.ts
+│   │   │   ├── stringify.js
+│   │   │   ├── symbols.js
+│   │   │   ├── terminal-highlight.js
+│   │   │   ├── tokenize.js
+│   │   │   ├── warn-once.js
+│   │   │   ├── warning.d.ts
+│   │   │   └── warning.js
+│   │   └── package.json
+│   ├── rollup
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── bin
+│   │   │   │   └── rollup
+│   │   │   ├── es
+│   │   │   │   ├── getLogFilter.js
+│   │   │   │   ├── package.json
+│   │   │   │   ├── parseAst.js
+│   │   │   │   ├── rollup.js
+│   │   │   │   └── shared
+│   │   │   │       ├── node-entry.js
+│   │   │   │       ├── parseAst.js
+│   │   │   │       └── watch.js
+│   │   │   ├── getLogFilter.d.ts
+│   │   │   ├── getLogFilter.js
+│   │   │   ├── loadConfigFile.d.ts
+│   │   │   ├── loadConfigFile.js
+│   │   │   ├── native.js
+│   │   │   ├── parseAst.d.ts
+│   │   │   ├── parseAst.js
+│   │   │   ├── rollup.d.ts
+│   │   │   ├── rollup.js
+│   │   │   └── shared
+│   │   │       ├── fsevents-importer.js
+│   │   │       ├── index.js
+│   │   │       ├── loadConfigFile.js
+│   │   │       ├── parseAst.js
+│   │   │       ├── rollup.js
+│   │   │       ├── watch-cli.js
+│   │   │       └── watch.js
+│   │   └── package.json
+│   ├── source-map-js
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── lib
+│   │   │   ├── array-set.js
+│   │   │   ├── base64-vlq.js
+│   │   │   ├── base64.js
+│   │   │   ├── binary-search.js
+│   │   │   ├── mapping-list.js
+│   │   │   ├── quick-sort.js
+│   │   │   ├── source-map-consumer.d.ts
+│   │   │   ├── source-map-consumer.js
+│   │   │   ├── source-map-generator.d.ts
+│   │   │   ├── source-map-generator.js
+│   │   │   ├── source-node.d.ts
+│   │   │   ├── source-node.js
+│   │   │   └── util.js
+│   │   ├── package.json
+│   │   ├── source-map.d.ts
+│   │   └── source-map.js
+│   ├── svelte
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── action.d.ts
+│   │   ├── animate.d.ts
+│   │   ├── compiler
+│   │   │   ├── index.js
+│   │   │   └── package.json
+│   │   ├── compiler.d.ts
+│   │   ├── easing.d.ts
+│   │   ├── elements.d.ts
+│   │   ├── index.d.ts
+│   │   ├── legacy.d.ts
+│   │   ├── motion.d.ts
+│   │   ├── package.json
+│   │   ├── src
+│   │   │   ├── animate
+│   │   │   │   └── index.js
+│   │   │   ├── attachments
+│   │   │   │   └── index.js
+│   │   │   ├── compiler
+│   │   │   │   ├── errors.js
+│   │   │   │   ├── index.js
+│   │   │   │   ├── legacy.js
+│   │   │   │   ├── migrate
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── phases
+│   │   │   │   │   ├── 1-parse
+│   │   │   │   │   │   ├── acorn.js
+│   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   ├── read
+│   │   │   │   │   │   │   ├── context.js
+│   │   │   │   │   │   │   ├── expression.js
+│   │   │   │   │   │   │   ├── options.js
+│   │   │   │   │   │   │   ├── script.js
+│   │   │   │   │   │   │   └── style.js
+│   │   │   │   │   │   ├── remove_typescript_nodes.js
+│   │   │   │   │   │   ├── state
+│   │   │   │   │   │   │   ├── element.js
+│   │   │   │   │   │   │   ├── fragment.js
+│   │   │   │   │   │   │   ├── tag.js
+│   │   │   │   │   │   │   └── text.js
+│   │   │   │   │   │   └── utils
+│   │   │   │   │   │       ├── bracket.js
+│   │   │   │   │   │       ├── create.js
+│   │   │   │   │   │       ├── entities.js
+│   │   │   │   │   │       ├── fuzzymatch.js
+│   │   │   │   │   │       └── html.js
+│   │   │   │   │   ├── 2-analyze
+│   │   │   │   │   │   ├── css
+│   │   │   │   │   │   │   ├── css-analyze.js
+│   │   │   │   │   │   │   ├── css-prune.js
+│   │   │   │   │   │   │   ├── css-warn.js
+│   │   │   │   │   │   │   └── utils.js
+│   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   ├── utils
+│   │   │   │   │   │   │   └── check_graph_for_cycles.js
+│   │   │   │   │   │   └── visitors
+│   │   │   │   │   │       ├── ArrowFunctionExpression.js
+│   │   │   │   │   │       ├── AssignmentExpression.js
+│   │   │   │   │   │       ├── AttachTag.js
+│   │   │   │   │   │       ├── Attribute.js
+│   │   │   │   │   │       ├── AwaitBlock.js
+│   │   │   │   │   │       ├── AwaitExpression.js
+│   │   │   │   │   │       ├── BindDirective.js
+│   │   │   │   │   │       ├── CallExpression.js
+│   │   │   │   │   │       ├── ClassBody.js
+│   │   │   │   │   │       ├── ClassDeclaration.js
+│   │   │   │   │   │       ├── ClassDirective.js
+│   │   │   │   │   │       ├── Component.js
+│   │   │   │   │   │       ├── ConstTag.js
+│   │   │   │   │   │       ├── DebugTag.js
+│   │   │   │   │   │       ├── EachBlock.js
+│   │   │   │   │   │       ├── ExportDefaultDeclaration.js
+│   │   │   │   │   │       ├── ExportNamedDeclaration.js
+│   │   │   │   │   │       ├── ExportSpecifier.js
+│   │   │   │   │   │       ├── ExpressionStatement.js
+│   │   │   │   │   │       ├── ExpressionTag.js
+│   │   │   │   │   │       ├── FunctionDeclaration.js
+│   │   │   │   │   │       ├── FunctionExpression.js
+│   │   │   │   │   │       ├── HtmlTag.js
+│   │   │   │   │   │       ├── Identifier.js
+│   │   │   │   │   │       ├── IfBlock.js
+│   │   │   │   │   │       ├── ImportDeclaration.js
+│   │   │   │   │   │       ├── KeyBlock.js
+│   │   │   │   │   │       ├── LabeledStatement.js
+│   │   │   │   │   │       ├── LetDirective.js
+│   │   │   │   │   │       ├── Literal.js
+│   │   │   │   │   │       ├── MemberExpression.js
+│   │   │   │   │   │       ├── NewExpression.js
+│   │   │   │   │   │       ├── OnDirective.js
+│   │   │   │   │   │       ├── PropertyDefinition.js
+│   │   │   │   │   │       ├── RegularElement.js
+│   │   │   │   │   │       ├── RenderTag.js
+│   │   │   │   │   │       ├── SlotElement.js
+│   │   │   │   │   │       ├── SnippetBlock.js
+│   │   │   │   │   │       ├── SpreadAttribute.js
+│   │   │   │   │   │       ├── SpreadElement.js
+│   │   │   │   │   │       ├── StyleDirective.js
+│   │   │   │   │   │       ├── SvelteBody.js
+│   │   │   │   │   │       ├── SvelteBoundary.js
+│   │   │   │   │   │       ├── SvelteComponent.js
+│   │   │   │   │   │       ├── SvelteDocument.js
+│   │   │   │   │   │       ├── SvelteElement.js
+│   │   │   │   │   │       ├── SvelteFragment.js
+│   │   │   │   │   │       ├── SvelteHead.js
+│   │   │   │   │   │       ├── SvelteSelf.js
+│   │   │   │   │   │       ├── SvelteWindow.js
+│   │   │   │   │   │       ├── TaggedTemplateExpression.js
+│   │   │   │   │   │       ├── TemplateElement.js
+│   │   │   │   │   │       ├── Text.js
+│   │   │   │   │   │       ├── TitleElement.js
+│   │   │   │   │   │       ├── TransitionDirective.js
+│   │   │   │   │   │       ├── UpdateExpression.js
+│   │   │   │   │   │       ├── UseDirective.js
+│   │   │   │   │   │       ├── VariableDeclarator.js
+│   │   │   │   │   │       └── shared
+│   │   │   │   │   │           ├── a11y
+│   │   │   │   │   │           │   ├── constants.js
+│   │   │   │   │   │           │   └── index.js
+│   │   │   │   │   │           ├── attribute.js
+│   │   │   │   │   │           ├── component.js
+│   │   │   │   │   │           ├── element.js
+│   │   │   │   │   │           ├── fragment.js
+│   │   │   │   │   │           ├── function.js
+│   │   │   │   │   │           ├── snippets.js
+│   │   │   │   │   │           ├── special-element.js
+│   │   │   │   │   │           └── utils.js
+│   │   │   │   │   ├── 3-transform
+│   │   │   │   │   │   ├── client
+│   │   │   │   │   │   │   ├── transform-client.js
+│   │   │   │   │   │   │   ├── transform-template
+│   │   │   │   │   │   │   │   ├── fix-attribute-casing.js
+│   │   │   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   │   │   └── template.js
+│   │   │   │   │   │   │   ├── utils.js
+│   │   │   │   │   │   │   └── visitors
+│   │   │   │   │   │   │       ├── AnimateDirective.js
+│   │   │   │   │   │   │       ├── ArrowFunctionExpression.js
+│   │   │   │   │   │   │       ├── AssignmentExpression.js
+│   │   │   │   │   │   │       ├── AttachTag.js
+│   │   │   │   │   │   │       ├── Attribute.js
+│   │   │   │   │   │   │       ├── AwaitBlock.js
+│   │   │   │   │   │   │       ├── AwaitExpression.js
+│   │   │   │   │   │   │       ├── BinaryExpression.js
+│   │   │   │   │   │   │       ├── BindDirective.js
+│   │   │   │   │   │   │       ├── BlockStatement.js
+│   │   │   │   │   │   │       ├── BreakStatement.js
+│   │   │   │   │   │   │       ├── CallExpression.js
+│   │   │   │   │   │   │       ├── ClassBody.js
+│   │   │   │   │   │   │       ├── Comment.js
+│   │   │   │   │   │   │       ├── Component.js
+│   │   │   │   │   │   │       ├── ConstTag.js
+│   │   │   │   │   │   │       ├── DebugTag.js
+│   │   │   │   │   │   │       ├── EachBlock.js
+│   │   │   │   │   │   │       ├── ExportNamedDeclaration.js
+│   │   │   │   │   │   │       ├── ExpressionStatement.js
+│   │   │   │   │   │   │       ├── Fragment.js
+│   │   │   │   │   │   │       ├── FunctionDeclaration.js
+│   │   │   │   │   │   │       ├── FunctionExpression.js
+│   │   │   │   │   │   │       ├── HtmlTag.js
+│   │   │   │   │   │   │       ├── Identifier.js
+│   │   │   │   │   │   │       ├── IfBlock.js
+│   │   │   │   │   │   │       ├── ImportDeclaration.js
+│   │   │   │   │   │   │       ├── KeyBlock.js
+│   │   │   │   │   │   │       ├── LabeledStatement.js
+│   │   │   │   │   │   │       ├── LetDirective.js
+│   │   │   │   │   │   │       ├── MemberExpression.js
+│   │   │   │   │   │   │       ├── OnDirective.js
+│   │   │   │   │   │   │       ├── Program.js
+│   │   │   │   │   │   │       ├── RegularElement.js
+│   │   │   │   │   │   │       ├── RenderTag.js
+│   │   │   │   │   │   │       ├── SlotElement.js
+│   │   │   │   │   │   │       ├── SnippetBlock.js
+│   │   │   │   │   │   │       ├── SpreadAttribute.js
+│   │   │   │   │   │   │       ├── SvelteBody.js
+│   │   │   │   │   │   │       ├── SvelteBoundary.js
+│   │   │   │   │   │   │       ├── SvelteComponent.js
+│   │   │   │   │   │   │       ├── SvelteDocument.js
+│   │   │   │   │   │   │       ├── SvelteElement.js
+│   │   │   │   │   │   │       ├── SvelteFragment.js
+│   │   │   │   │   │   │       ├── SvelteHead.js
+│   │   │   │   │   │   │       ├── SvelteSelf.js
+│   │   │   │   │   │   │       ├── SvelteWindow.js
+│   │   │   │   │   │   │       ├── TitleElement.js
+│   │   │   │   │   │   │       ├── TransitionDirective.js
+│   │   │   │   │   │   │       ├── UpdateExpression.js
+│   │   │   │   │   │   │       ├── UseDirective.js
+│   │   │   │   │   │   │       ├── VariableDeclaration.js
+│   │   │   │   │   │   │       └── shared
+│   │   │   │   │   │   │           ├── component.js
+│   │   │   │   │   │   │           ├── declarations.js
+│   │   │   │   │   │   │           ├── element.js
+│   │   │   │   │   │   │           ├── events.js
+│   │   │   │   │   │   │           ├── fragment.js
+│   │   │   │   │   │   │           ├── function.js
+│   │   │   │   │   │   │           ├── special_element.js
+│   │   │   │   │   │   │           └── utils.js
+│   │   │   │   │   │   ├── css
+│   │   │   │   │   │   │   └── index.js
+│   │   │   │   │   │   ├── index.js
+│   │   │   │   │   │   ├── server
+│   │   │   │   │   │   │   ├── transform-server.js
+│   │   │   │   │   │   │   └── visitors
+│   │   │   │   │   │   │       ├── AssignmentExpression.js
+│   │   │   │   │   │   │       ├── AwaitBlock.js
+│   │   │   │   │   │   │       ├── AwaitExpression.js
+│   │   │   │   │   │   │       ├── CallExpression.js
+│   │   │   │   │   │   │       ├── ClassBody.js
+│   │   │   │   │   │   │       ├── Component.js
+│   │   │   │   │   │   │       ├── ConstTag.js
+│   │   │   │   │   │   │       ├── DebugTag.js
+│   │   │   │   │   │   │       ├── EachBlock.js
+│   │   │   │   │   │   │       ├── ExpressionStatement.js
+│   │   │   │   │   │   │       ├── Fragment.js
+│   │   │   │   │   │   │       ├── HtmlTag.js
+│   │   │   │   │   │   │       ├── Identifier.js
+│   │   │   │   │   │   │       ├── IfBlock.js
+│   │   │   │   │   │   │       ├── KeyBlock.js
+│   │   │   │   │   │   │       ├── LabeledStatement.js
+│   │   │   │   │   │   │       ├── MemberExpression.js
+│   │   │   │   │   │   │       ├── PropertyDefinition.js
+│   │   │   │   │   │   │       ├── RegularElement.js
+│   │   │   │   │   │   │       ├── RenderTag.js
+│   │   │   │   │   │   │       ├── SlotElement.js
+│   │   │   │   │   │   │       ├── SnippetBlock.js
+│   │   │   │   │   │   │       ├── SpreadAttribute.js
+│   │   │   │   │   │   │       ├── SvelteBoundary.js
+│   │   │   │   │   │   │       ├── SvelteComponent.js
+│   │   │   │   │   │   │       ├── SvelteElement.js
+│   │   │   │   │   │   │       ├── SvelteFragment.js
+│   │   │   │   │   │   │       ├── SvelteHead.js
+│   │   │   │   │   │   │       ├── SvelteSelf.js
+│   │   │   │   │   │   │       ├── TitleElement.js
+│   │   │   │   │   │   │       ├── UpdateExpression.js
+│   │   │   │   │   │   │       ├── VariableDeclaration.js
+│   │   │   │   │   │   │       └── shared
+│   │   │   │   │   │   │           ├── component.js
+│   │   │   │   │   │   │           ├── element.js
+│   │   │   │   │   │   │           └── utils.js
+│   │   │   │   │   │   ├── shared
+│   │   │   │   │   │   │   └── assignments.js
+│   │   │   │   │   │   └── utils.js
+│   │   │   │   │   ├── bindings.js
+│   │   │   │   │   ├── css.js
+│   │   │   │   │   ├── nodes.js
+│   │   │   │   │   ├── patterns.js
+│   │   │   │   │   └── scope.js
+│   │   │   │   ├── preprocess
+│   │   │   │   │   ├── decode_sourcemap.js
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── replace_in_code.js
+│   │   │   │   ├── state.js
+│   │   │   │   ├── utils
+│   │   │   │   │   ├── assert.js
+│   │   │   │   │   ├── ast.js
+│   │   │   │   │   ├── builders.js
+│   │   │   │   │   ├── compile_diagnostic.js
+│   │   │   │   │   ├── extract_svelte_ignore.js
+│   │   │   │   │   ├── mapped_code.js
+│   │   │   │   │   ├── push_array.js
+│   │   │   │   │   ├── sanitize_template_string.js
+│   │   │   │   │   ├── slot.js
+│   │   │   │   │   └── string.js
+│   │   │   │   ├── validate-options.js
+│   │   │   │   └── warnings.js
+│   │   │   ├── constants.js
+│   │   │   ├── easing
+│   │   │   │   └── index.js
+│   │   │   ├── escaping.js
+│   │   │   ├── events
+│   │   │   │   └── index.js
+│   │   │   ├── html-tree-validation.js
+│   │   │   ├── index-client.js
+│   │   │   ├── index-server.js
+│   │   │   ├── internal
+│   │   │   │   ├── client
+│   │   │   │   │   ├── constants.js
+│   │   │   │   │   ├── context.js
+│   │   │   │   │   ├── dev
+│   │   │   │   │   │   ├── assign.js
+│   │   │   │   │   │   ├── console-log.js
+│   │   │   │   │   │   ├── css.js
+│   │   │   │   │   │   ├── debug.js
+│   │   │   │   │   │   ├── elements.js
+│   │   │   │   │   │   ├── equality.js
+│   │   │   │   │   │   ├── hmr.js
+│   │   │   │   │   │   ├── inspect.js
+│   │   │   │   │   │   ├── legacy.js
+│   │   │   │   │   │   ├── ownership.js
+│   │   │   │   │   │   ├── tracing.js
+│   │   │   │   │   │   └── validation.js
+│   │   │   │   │   ├── dom
+│   │   │   │   │   │   ├── blocks
+│   │   │   │   │   │   │   ├── async.js
+│   │   │   │   │   │   │   ├── await.js
+│   │   │   │   │   │   │   ├── boundary.js
+│   │   │   │   │   │   │   ├── css-props.js
+│   │   │   │   │   │   │   ├── each.js
+│   │   │   │   │   │   │   ├── html.js
+│   │   │   │   │   │   │   ├── if.js
+│   │   │   │   │   │   │   ├── key.js
+│   │   │   │   │   │   │   ├── slot.js
+│   │   │   │   │   │   │   ├── snippet.js
+│   │   │   │   │   │   │   ├── svelte-component.js
+│   │   │   │   │   │   │   ├── svelte-element.js
+│   │   │   │   │   │   │   └── svelte-head.js
+│   │   │   │   │   │   ├── css.js
+│   │   │   │   │   │   ├── elements
+│   │   │   │   │   │   │   ├── actions.js
+│   │   │   │   │   │   │   ├── attachments.js
+│   │   │   │   │   │   │   ├── attributes.js
+│   │   │   │   │   │   │   ├── bindings
+│   │   │   │   │   │   │   │   ├── document.js
+│   │   │   │   │   │   │   │   ├── input.js
+│   │   │   │   │   │   │   │   ├── media.js
+│   │   │   │   │   │   │   │   ├── navigator.js
+│   │   │   │   │   │   │   │   ├── props.js
+│   │   │   │   │   │   │   │   ├── select.js
+│   │   │   │   │   │   │   │   ├── shared.js
+│   │   │   │   │   │   │   │   ├── size.js
+│   │   │   │   │   │   │   │   ├── this.js
+│   │   │   │   │   │   │   │   ├── universal.js
+│   │   │   │   │   │   │   │   └── window.js
+│   │   │   │   │   │   │   ├── class.js
+│   │   │   │   │   │   │   ├── custom-element.js
+│   │   │   │   │   │   │   ├── events.js
+│   │   │   │   │   │   │   ├── misc.js
+│   │   │   │   │   │   │   ├── style.js
+│   │   │   │   │   │   │   └── transitions.js
+│   │   │   │   │   │   ├── hydration.js
+│   │   │   │   │   │   ├── legacy
+│   │   │   │   │   │   │   ├── event-modifiers.js
+│   │   │   │   │   │   │   ├── lifecycle.js
+│   │   │   │   │   │   │   └── misc.js
+│   │   │   │   │   │   ├── operations.js
+│   │   │   │   │   │   ├── reconciler.js
+│   │   │   │   │   │   ├── task.js
+│   │   │   │   │   │   └── template.js
+│   │   │   │   │   ├── error-handling.js
+│   │   │   │   │   ├── errors.js
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   ├── loop.js
+│   │   │   │   │   ├── proxy.js
+│   │   │   │   │   ├── reactivity
+│   │   │   │   │   │   ├── async.js
+│   │   │   │   │   │   ├── batch.js
+│   │   │   │   │   │   ├── deriveds.js
+│   │   │   │   │   │   ├── effects.js
+│   │   │   │   │   │   ├── equality.js
+│   │   │   │   │   │   ├── props.js
+│   │   │   │   │   │   ├── sources.js
+│   │   │   │   │   │   └── store.js
+│   │   │   │   │   ├── render.js
+│   │   │   │   │   ├── runtime.js
+│   │   │   │   │   ├── timing.js
+│   │   │   │   │   ├── validate.js
+│   │   │   │   │   └── warnings.js
+│   │   │   │   ├── disclose-version.js
+│   │   │   │   ├── flags
+│   │   │   │   │   ├── async.js
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   ├── legacy.js
+│   │   │   │   │   └── tracing.js
+│   │   │   │   ├── index.js
+│   │   │   │   ├── server
+│   │   │   │   │   ├── abort-signal.js
+│   │   │   │   │   ├── blocks
+│   │   │   │   │   │   ├── html.js
+│   │   │   │   │   │   └── snippet.js
+│   │   │   │   │   ├── context.js
+│   │   │   │   │   ├── dev.js
+│   │   │   │   │   ├── errors.js
+│   │   │   │   │   ├── hydration.js
+│   │   │   │   │   ├── index.js
+│   │   │   │   │   └── payload.js
+│   │   │   │   └── shared
+│   │   │   │       ├── attributes.js
+│   │   │   │       ├── clone.js
+│   │   │   │       ├── errors.js
+│   │   │   │       ├── utils.js
+│   │   │   │       ├── validate.js
+│   │   │   │       └── warnings.js
+│   │   │   ├── legacy
+│   │   │   │   ├── legacy-client.js
+│   │   │   │   └── legacy-server.js
+│   │   │   ├── motion
+│   │   │   │   ├── index.js
+│   │   │   │   ├── spring.js
+│   │   │   │   ├── tweened.js
+│   │   │   │   └── utils.js
+│   │   │   ├── reactivity
+│   │   │   │   ├── create-subscriber.js
+│   │   │   │   ├── date.js
+│   │   │   │   ├── index-client.js
+│   │   │   │   ├── index-server.js
+│   │   │   │   ├── map.js
+│   │   │   │   ├── media-query.js
+│   │   │   │   ├── reactive-value.js
+│   │   │   │   ├── set.js
+│   │   │   │   ├── url-search-params.js
+│   │   │   │   ├── url.js
+│   │   │   │   └── window
+│   │   │   │       └── index.js
+│   │   │   ├── server
+│   │   │   │   └── index.js
+│   │   │   ├── store
+│   │   │   │   ├── index-client.js
+│   │   │   │   ├── index-server.js
+│   │   │   │   ├── shared
+│   │   │   │   │   └── index.js
+│   │   │   │   └── utils.js
+│   │   │   ├── transition
+│   │   │   │   └── index.js
+│   │   │   ├── utils.js
+│   │   │   └── version.js
+│   │   ├── store.d.ts
+│   │   ├── svelte-html.d.ts
+│   │   ├── transition.d.ts
+│   │   └── types
+│   │       ├── compiler
+│   │       │   ├── interfaces.d.ts
+│   │       │   └── preprocess.d.ts
+│   │       ├── index.d.ts
+│   │       └── index.d.ts.map
+│   ├── tinyglobby
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── dist
+│   │   │   ├── index.d.mts
+│   │   │   ├── index.d.ts
+│   │   │   ├── index.js
+│   │   │   └── index.mjs
+│   │   └── package.json
+│   ├── vite
+│   │   ├── LICENSE.md
+│   │   ├── README.md
+│   │   ├── bin
+│   │   │   ├── openChrome.applescript
+│   │   │   └── vite.js
+│   │   ├── client.d.ts
+│   │   ├── dist
+│   │   │   ├── client
+│   │   │   │   ├── client.mjs
+│   │   │   │   └── env.mjs
+│   │   │   └── node
+│   │   │       ├── chunks
+│   │   │       │   ├── dep-BO5GbxpL.js
+│   │   │       │   ├── dep-BpPEUsd2.js
+│   │   │       │   ├── dep-C8ByWFY_.js
+│   │   │       │   ├── dep-Ctugieod.js
+│   │   │       │   ├── dep-DDxIcCnt.js
+│   │   │       │   ├── dep-DFHPNLee.js
+│   │   │       │   ├── dep-DZ2tZksn.js
+│   │   │       │   ├── dep-DcjhO6Jt.js
+│   │   │       │   ├── dep-DmY5m86w.js
+│   │   │       │   ├── dep-Drtntmtt.js
+│   │   │       │   └── dep-JtmpCfr0.js
+│   │   │       ├── cli.js
+│   │   │       ├── constants.js
+│   │   │       ├── index.d.ts
+│   │   │       ├── index.js
+│   │   │       ├── module-runner.d.ts
+│   │   │       ├── module-runner.js
+│   │   │       └── moduleRunnerTransport-BWUZBVLX.d.ts
+│   │   ├── misc
+│   │   │   ├── false.js
+│   │   │   └── true.js
+│   │   ├── package.json
+│   │   └── types
+│   │       ├── customEvent.d.ts
+│   │       ├── hmrPayload.d.ts
+│   │       ├── hot.d.ts
+│   │       ├── import-meta.d.ts
+│   │       ├── importGlob.d.ts
+│   │       ├── importMeta.d.ts
+│   │       ├── internal
+│   │       │   ├── cssPreprocessorOptions.d.ts
+│   │       │   ├── lightningcssOptions.d.ts
+│   │       │   └── terserOptions.d.ts
+│   │       ├── metadata.d.ts
+│   │       └── package.json
+│   ├── vitefu
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   └── src
+│   │       ├── index.cjs
+│   │       ├── index.d.cts
+│   │       ├── index.d.ts
+│   │       ├── index.js
+│   │       └── sync.cjs
+│   └── zimmerframe
+│       ├── LICENSE
+│       ├── README.md
+│       ├── package.json
+│       ├── src
+│       │   ├── index.d.ts
+│       │   ├── types.d.ts
+│       │   └── walk.js
+│       └── types
+│           ├── index.d.ts
+│           └── index.d.ts.map
+├── package-lock.json
+├── package.json
+├── src
+│   ├── App.svelte
+│   ├── components
+│   │   └── Spreadsheet.svelte
+│   ├── lib
+│   │   └── FormulaEngine.js
+│   └── main.js
+├── src-tauri
+│   ├── Cargo.toml
+│   ├── build.rs
+│   ├── icons
+│   │   └── icon.png
+│   └── src
+│       └── main.rs
+├── svelte.config.js
+├── target
+│   ├── CACHEDIR.TAG
+│   └── debug
+│       ├── build
+│       │   ├── anyhow-1fea51c98c81cce8
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── anyhow-b3031e426d49d7c9
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-b3031e426d49d7c9
+│       │   │   └── build_script_build-b3031e426d49d7c9.d
+│       │   ├── atk-sys-30908b64d4be7bc4
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-30908b64d4be7bc4
+│       │   │   └── build_script_build-30908b64d4be7bc4.d
+│       │   ├── atk-sys-c015b712cc306da1
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── cairo-sys-rs-8f7d6a1add02672b
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── cairo-sys-rs-dee845f10a3c1c40
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-dee845f10a3c1c40
+│       │   │   └── build_script_build-dee845f10a3c1c40.d
+│       │   ├── crc32fast-3a22bbf460790681
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── crc32fast-5466925a00199899
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-5466925a00199899
+│       │   │   └── build_script_build-5466925a00199899.d
+│       │   ├── crossbeam-utils-88b8605be26ef90c
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-88b8605be26ef90c
+│       │   │   └── build_script_build-88b8605be26ef90c.d
+│       │   ├── crossbeam-utils-ffa6134ab49135d1
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── cssparser-7051fcf6ccacbbcc
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   └── tokenizer.rs
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── cssparser-e8ce5d8e777f0448
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-e8ce5d8e777f0448
+│       │   │   └── build_script_build-e8ce5d8e777f0448.d
+│       │   ├── field-offset-0f02695a089a2616
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── field-offset-ab071ccc80f0340a
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-ab071ccc80f0340a
+│       │   │   └── build_script_build-ab071ccc80f0340a.d
+│       │   ├── gdk-pixbuf-sys-e6c38cc999f29dfc
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gdk-pixbuf-sys-f3de25d841a91eb9
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-f3de25d841a91eb9
+│       │   │   └── build_script_build-f3de25d841a91eb9.d
+│       │   ├── gdk-sys-2b711dbff544a12e
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gdk-sys-7c060d33534c5d1f
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-7c060d33534c5d1f
+│       │   │   └── build_script_build-7c060d33534c5d1f.d
+│       │   ├── gdkx11-sys-5868218ab3cab8c3
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gdkx11-sys-e4bdc255fe82590b
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-e4bdc255fe82590b
+│       │   │   └── build_script_build-e4bdc255fe82590b.d
+│       │   ├── generic-array-27e0812fe9f1c82e
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-27e0812fe9f1c82e
+│       │   │   └── build_script_build-27e0812fe9f1c82e.d
+│       │   ├── generic-array-4c580ccec29e826a
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── getrandom-1e95800acddc8c06
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── getrandom-80e01523aec00a2d
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-80e01523aec00a2d
+│       │   │   └── build_script_build-80e01523aec00a2d.d
+│       │   ├── getrandom-88ee85d9da9a01a7
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── getrandom-fc59d817df58cfa2
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-fc59d817df58cfa2
+│       │   │   └── build_script_build-fc59d817df58cfa2.d
+│       │   ├── gio-1c397efd1134ebf1
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gio-c6808de3da4a0800
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-c6808de3da4a0800
+│       │   │   └── build_script_build-c6808de3da4a0800.d
+│       │   ├── gio-sys-23f013ab1e8dcca5
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gio-sys-bf68dc400033894e
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-bf68dc400033894e
+│       │   │   └── build_script_build-bf68dc400033894e.d
+│       │   ├── glib-sys-3818d4b068377bc2
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-3818d4b068377bc2
+│       │   │   └── build_script_build-3818d4b068377bc2.d
+│       │   ├── glib-sys-d979041f02a98d97
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gobject-sys-6ef97591dabf1e00
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-6ef97591dabf1e00
+│       │   │   └── build_script_build-6ef97591dabf1e00.d
+│       │   ├── gobject-sys-b459aa2a5e5ece1e
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gtk-11fbdd83dd3839d8
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-11fbdd83dd3839d8
+│       │   │   └── build_script_build-11fbdd83dd3839d8.d
+│       │   ├── gtk-641d5bdba902ed10
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gtk-sys-844586224e8864ab
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── gtk-sys-bb624e6c4ba79ac8
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-bb624e6c4ba79ac8
+│       │   │   └── build_script_build-bb624e6c4ba79ac8.d
+│       │   ├── html5ever-6bb4dca0526d8a26
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   └── rules.rs
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── html5ever-8bf0ff554a07e358
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-8bf0ff554a07e358
+│       │   │   └── build_script_build-8bf0ff554a07e358.d
+│       │   ├── icu_normalizer_data-1108723fc1f3855c
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── icu_normalizer_data-908ab14563240597
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-908ab14563240597
+│       │   │   └── build_script_build-908ab14563240597.d
+│       │   ├── icu_properties_data-2d36f9144fa2df16
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-2d36f9144fa2df16
+│       │   │   └── build_script_build-2d36f9144fa2df16.d
+│       │   ├── icu_properties_data-416641e4b695464a
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── indexmap-185e61acf5ee28dc
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── indexmap-889c4f020f4bb4ae
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-889c4f020f4bb4ae
+│       │   │   └── build_script_build-889c4f020f4bb4ae.d
+│       │   ├── javascriptcore-rs-sys-adc3ace8a851f4ee
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── javascriptcore-rs-sys-f921b4b5d4e9c5de
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-f921b4b5d4e9c5de
+│       │   │   └── build_script_build-f921b4b5d4e9c5de.d
+│       │   ├── libc-46cba43152271a15
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-46cba43152271a15
+│       │   │   └── build_script_build-46cba43152271a15.d
+│       │   ├── libc-9d68f4abca27c9af
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── lock_api-91537e545019d5b9
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-91537e545019d5b9
+│       │   │   └── build_script_build-91537e545019d5b9.d
+│       │   ├── lock_api-96adb08174198570
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── markup5ever-28ac22535aa9887c
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   ├── generated.rs
+│       │   │   │   └── named_entities.rs
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── markup5ever-d368c9bcc6d6e09d
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-d368c9bcc6d6e09d
+│       │   │   └── build_script_build-d368c9bcc6d6e09d.d
+│       │   ├── memoffset-d9645b3521a71f66
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-d9645b3521a71f66
+│       │   │   └── build_script_build-d9645b3521a71f66.d
+│       │   ├── memoffset-f4a6c90d4e3f18eb
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── pango-sys-5c7752f3cf87709c
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-5c7752f3cf87709c
+│       │   │   └── build_script_build-5c7752f3cf87709c.d
+│       │   ├── pango-sys-c90e474a08204b02
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── parking_lot_core-999b582fa35630d3
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-999b582fa35630d3
+│       │   │   └── build_script_build-999b582fa35630d3.d
+│       │   ├── parking_lot_core-d5ba795b49a036a8
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── proc-macro-error-045b50110a06d8fb
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── proc-macro-error-7d573fda02fedde1
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-7d573fda02fedde1
+│       │   │   └── build_script_build-7d573fda02fedde1.d
+│       │   ├── proc-macro-error-attr-ea676c37298f4260
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── proc-macro-error-attr-fcc5e60b7bca9861
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-fcc5e60b7bca9861
+│       │   │   └── build_script_build-fcc5e60b7bca9861.d
+│       │   ├── proc-macro-hack-6f3ecb64266a5810
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-6f3ecb64266a5810
+│       │   │   └── build_script_build-6f3ecb64266a5810.d
+│       │   ├── proc-macro-hack-b024f556a64a9047
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── proc-macro2-12bae66f386eed49
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── proc-macro2-88c32e371799c1f7
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-88c32e371799c1f7
+│       │   │   └── build_script_build-88c32e371799c1f7.d
+│       │   ├── rfd-2a45c030e0cd2e6a
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-2a45c030e0cd2e6a
+│       │   │   └── build_script_build-2a45c030e0cd2e6a.d
+│       │   ├── rfd-b16354c6ea807005
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── rustix-79a26db31cf3d350
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── rustix-9b229370c65bc4c7
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-9b229370c65bc4c7
+│       │   │   └── build_script_build-9b229370c65bc4c7.d
+│       │   ├── scratchtable-42a811a854ae4594
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── scratchtable-868b74da33a5e819
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-868b74da33a5e819
+│       │   │   └── build_script_build-868b74da33a5e819.d
+│       │   ├── selectors-ca31c95c1c4d95f3
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   └── ascii_case_insensitive_html_attributes.rs
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── selectors-dffdd734e8207cbe
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-dffdd734e8207cbe
+│       │   │   └── build_script_build-dffdd734e8207cbe.d
+│       │   ├── semver-43b6b9e48f33dd86
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── semver-b6aac3c7cceb0190
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-b6aac3c7cceb0190
+│       │   │   └── build_script_build-b6aac3c7cceb0190.d
+│       │   ├── semver-c67fc956ffbece98
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-c67fc956ffbece98
+│       │   │   └── build_script_build-c67fc956ffbece98.d
+│       │   ├── semver-f8d0bc77d8a9dbf1
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── serde-394bff2edf939c0f
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── serde-a4e39656d26e57b4
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-a4e39656d26e57b4
+│       │   │   └── build_script_build-a4e39656d26e57b4.d
+│       │   ├── serde_json-2a18c8907becf9dd
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── serde_json-a176ac64725cfef1
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── serde_json-a6a2a1b61705e515
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-a6a2a1b61705e515
+│       │   │   └── build_script_build-a6a2a1b61705e515.d
+│       │   ├── serde_json-a6f994bbe65a7c60
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-a6f994bbe65a7c60
+│       │   │   └── build_script_build-a6f994bbe65a7c60.d
+│       │   ├── soup2-sys-5715bb165a9ec4b5
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── soup2-sys-e21a16500d6125cb
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-e21a16500d6125cb
+│       │   │   └── build_script_build-e21a16500d6125cb.d
+│       │   ├── syn-384b6654963be71b
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── syn-d96af843025de00a
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-d96af843025de00a
+│       │   │   └── build_script_build-d96af843025de00a.d
+│       │   ├── tao-48db224e364d4341
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── tao-a95a974e0bc64826
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-a95a974e0bc64826
+│       │   │   └── build_script_build-a95a974e0bc64826.d
+│       │   ├── target-lexicon-9871ee972bb88a70
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   └── host.rs
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── target-lexicon-b34e3cb066da1e41
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-b34e3cb066da1e41
+│       │   │   └── build_script_build-b34e3cb066da1e41.d
+│       │   ├── tauri-6deeb4a0e381cb48
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-6deeb4a0e381cb48
+│       │   │   └── build_script_build-6deeb4a0e381cb48.d
+│       │   ├── tauri-927837fedaf20429
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   └── checked_features
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── tauri-runtime-504002fd7d13a8b9
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── tauri-runtime-66e529e659f0d906
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-66e529e659f0d906
+│       │   │   └── build_script_build-66e529e659f0d906.d
+│       │   ├── tauri-runtime-wry-286fd72d5d54766f
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── tauri-runtime-wry-8dc617a955faa6ae
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-8dc617a955faa6ae
+│       │   │   └── build_script_build-8dc617a955faa6ae.d
+│       │   ├── thiserror-0ab41f997ece6c55
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-0ab41f997ece6c55
+│       │   │   └── build_script_build-0ab41f997ece6c55.d
+│       │   ├── thiserror-5c7e835cbcf3ecb5
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── typenum-1f282336f2788d1c
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   └── tests.rs
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── typenum-911c3e43dcb6b56a
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-911c3e43dcb6b56a
+│       │   │   └── build_script_build-911c3e43dcb6b56a.d
+│       │   ├── webkit2gtk-sys-048f264287c686c5
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── webkit2gtk-sys-dbc73246e022f90e
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-dbc73246e022f90e
+│       │   │   └── build_script_build-dbc73246e022f90e.d
+│       │   ├── wry-01f4048a436365b8
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── wry-57c9a056781d47d8
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-57c9a056781d47d8
+│       │   │   └── build_script_build-57c9a056781d47d8.d
+│       │   ├── x11-962d9ecac511850d
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── x11-ae5c226dbfb8b393
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-ae5c226dbfb8b393
+│       │   │   └── build_script_build-ae5c226dbfb8b393.d
+│       │   ├── x11-dl-1ae1c979ee0aa1e0
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   │   └── config.rs
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   ├── x11-dl-2ef534180b3c5e31
+│       │   │   ├── build-script-build
+│       │   │   ├── build_script_build-2ef534180b3c5e31
+│       │   │   └── build_script_build-2ef534180b3c5e31.d
+│       │   ├── zerocopy-a171ac0550851143
+│       │   │   ├── invoked.timestamp
+│       │   │   ├── out
+│       │   │   ├── output
+│       │   │   ├── root-output
+│       │   │   └── stderr
+│       │   └── zerocopy-ce37cc0dffdc199b
+│       │       ├── build-script-build
+│       │       ├── build_script_build-ce37cc0dffdc199b
+│       │       └── build_script_build-ce37cc0dffdc199b.d
+│       ├── deps
+│       │   ├── adler2-af5b0e47f1b187b9.d
+│       │   ├── aho_corasick-1b7f3ecbcf3f171a.d
+│       │   ├── alloc_no_stdlib-cc81188fe16931f8.d
+│       │   ├── alloc_stdlib-e32a36e2e3b9cd7b.d
+│       │   ├── anyhow-cb0106135621df54.d
+│       │   ├── atk-13129fa6cc362e17.d
+│       │   ├── atk_sys-d9d9730c808e8518.d
+│       │   ├── autocfg-9280f9c2f723f569.d
+│       │   ├── base64-9ded01860c590c16.d
+│       │   ├── bitflags-473b852bda163ccf.d
+│       │   ├── bitflags-c5e8392f486cd43f.d
+│       │   ├── block_buffer-84156d25b3c3d385.d
+│       │   ├── brotli-1845120df4c5cd55.d
+│       │   ├── brotli_decompressor-e57eb2187f4d6a4c.d
+│       │   ├── bstr-d5f3ba365115ebd7.d
+│       │   ├── byteorder-bf74668de8f2b493.d
+│       │   ├── bytes-e9fddd1bd45d8900.d
+│       │   ├── cairo-0678ce0b8cf9b257.d
+│       │   ├── cairo_sys-385dc50794c5dc5d.d
+│       │   ├── cargo_toml-d6d3ba8d782f7439.d
+│       │   ├── cc-68ccb9de7bddcbf4.d
+│       │   ├── cfb-0f46bab0abd2cb6c.d
+│       │   ├── cfg_expr-76c0f148c90d0267.d
+│       │   ├── cfg_expr-ba26cd147e3a8248.d
+│       │   ├── cfg_if-cb2748525c1e0288.d
+│       │   ├── convert_case-0928d336c7f239df.d
+│       │   ├── cpufeatures-e69806b0dee56216.d
+│       │   ├── crc32fast-9163957251cda90c.d
+│       │   ├── crossbeam_channel-8ae62eef2387302c.d
+│       │   ├── crossbeam_deque-6eff64acbf7d429b.d
+│       │   ├── crossbeam_epoch-200b34a9fc27e54b.d
+│       │   ├── crossbeam_utils-87bf1fc038236a3e.d
+│       │   ├── crypto_common-02607a0a764a683c.d
+│       │   ├── cssparser-1e49d4c3941987a6.d
+│       │   ├── cssparser_macros-a583eb56892ac155.d
+│       │   ├── csv-f2052e1a6fad30e5.d
+│       │   ├── csv_core-9f27b4cd2f221373.d
+│       │   ├── ctor-79da51bea8ab36ca.d
+│       │   ├── darling-b9746b8e5e65e74e.d
+│       │   ├── darling_core-63d51d043acc9375.d
+│       │   ├── darling_macro-44464d2faa927b5b.d
+│       │   ├── debug_unreachable-b8aa6216bce7eec3.d
+│       │   ├── derive_more-c160597a889afc85.d
+│       │   ├── digest-cfca3daec1be695c.d
+│       │   ├── dirs_next-7d620c9753ffc43f.d
+│       │   ├── dirs_sys_next-0afb42b863351952.d
+│       │   ├── displaydoc-f09e92e998eb8f82.d
+│       │   ├── dtoa-1f44ad2db860c5a3.d
+│       │   ├── dtoa_short-c1ac67b434f7896c.d
+│       │   ├── dunce-47915fe7b5d83d3c.d
+│       │   ├── embed_resource-4d5461233e6cd54f.d
+│       │   ├── encoding_rs-0104e72069822780.d
+│       │   ├── equivalent-fb6cc83cf281e9bc.d
+│       │   ├── fastrand-4c7d3317299366b7.d
+│       │   ├── fdeflate-fdc3ba469c7432f9.d
+│       │   ├── field_offset-e282d4ecc77dbce1.d
+│       │   ├── filetime-fea2f6e7a631237f.d
+│       │   ├── flate2-f3975ad901c0b851.d
+│       │   ├── fnv-293287ae6d18546d.d
+│       │   ├── form_urlencoded-9d1ba0e264b8f657.d
+│       │   ├── form_urlencoded-b360c402ab379b06.d
+│       │   ├── futf-d250804e04a533fc.d
+│       │   ├── futures_channel-9ea0bf10b0e17f86.d
+│       │   ├── futures_core-61cc14625ddc4347.d
+│       │   ├── futures_executor-f5bb197872d50ea9.d
+│       │   ├── futures_io-83cfef114f18ef98.d
+│       │   ├── futures_macro-29412c1d89c49486.d
+│       │   ├── futures_task-10180464d5af716d.d
+│       │   ├── futures_util-a24462057690f1fe.d
+│       │   ├── fxhash-4e2622675201e2c1.d
+│       │   ├── gdk-fd51d227a1779796.d
+│       │   ├── gdk_pixbuf-ec38ae731b914c87.d
+│       │   ├── gdk_pixbuf_sys-fdc1d802ec04cd19.d
+│       │   ├── gdk_sys-bdcb94e2072465e3.d
+│       │   ├── gdk_wayland_sys-bbfe3482164418e6.d
+│       │   ├── gdk_x11_sys-20ea7ad1a683efbf.d
+│       │   ├── generic_array-19356362d6f962e8.d
+│       │   ├── getrandom-0e1cb3a3a72c087b.d
+│       │   ├── getrandom-5422fbed6c906ea1.d
+│       │   ├── getrandom-e4a29fbc9a1e6161.d
+│       │   ├── gio-dc5b90b69e10fe84.d
+│       │   ├── gio_sys-e04cc3c073f872fa.d
+│       │   ├── glib-78fb0ee77007f55b.d
+│       │   ├── glib_macros-584794d614268d3d.d
+│       │   ├── glib_sys-b58d0d31046ea412.d
+│       │   ├── glob-efea7dff89a0408c.d
+│       │   ├── globset-a7b63028344d57e5.d
+│       │   ├── gobject_sys-a6ba36af1d591f59.d
+│       │   ├── gtk-e42c97af9a2b27ad.d
+│       │   ├── gtk3_macros-d134ec9617326c4c.d
+│       │   ├── gtk_sys-ad1e9badf59dc3da.d
+│       │   ├── hashbrown-6c3187470aeae78e.d
+│       │   ├── hashbrown-a7922e91caf03274.d
+│       │   ├── heck-022ddcbe783e6ebf.d
+│       │   ├── heck-a6a7539774212eec.d
+│       │   ├── heck-eb50d75f7af7f099.d
+│       │   ├── html5ever-c506c499f2f7287d.d
+│       │   ├── html5ever-daa15e0ea95ed98d.d
+│       │   ├── http-af18e4ff9e3dfe38.d
+│       │   ├── http_range-8f1eb3e94ba23ab8.d
+│       │   ├── ico-a1baf13a4394b0a4.d
+│       │   ├── icu_collections-20fe74e46043cb72.d
+│       │   ├── icu_locale_core-83029e1b1200409d.d
+│       │   ├── icu_normalizer-7c1b292f24cdcfa0.d
+│       │   ├── icu_normalizer_data-8af801d1e279beea.d
+│       │   ├── icu_properties-6e528be0ad41f19d.d
+│       │   ├── icu_properties_data-91561ce0fcc0a22a.d
+│       │   ├── icu_provider-b0e7571008775241.d
+│       │   ├── ident_case-810f24c216404eb6.d
+│       │   ├── idna-b1f3aa41ae7493c1.d
+│       │   ├── idna_adapter-abe859e6df8a1018.d
+│       │   ├── ignore-5d45cdb57cc101fe.d
+│       │   ├── indexmap-2ca38de8ea07d198.d
+│       │   ├── indexmap-58d13af8978bf8d7.d
+│       │   ├── infer-bbc96d40cf3f5535.d
+│       │   ├── instant-bb01c7c12a3d0298.d
+│       │   ├── itoa-2622358e5e622a7a.d
+│       │   ├── itoa-b11a99c3fb91e0ba.d
+│       │   ├── javascriptcore-d6988171cfd63f33.d
+│       │   ├── javascriptcore_rs_sys-048746141aacba81.d
+│       │   ├── json_patch-0a76c8902459001b.d
+│       │   ├── json_patch-d12266521eecdf86.d
+│       │   ├── jsonptr-09706302ca424503.d
+│       │   ├── jsonptr-12ec243509d044e7.d
+│       │   ├── kuchikiki-5b41197b4c5068b0.d
+│       │   ├── kuchikiki-5e947a78e3dabef3.d
+│       │   ├── lazy_static-a60c6f0d6f5b0a48.d
+│       │   ├── libadler2-af5b0e47f1b187b9.rlib
+│       │   ├── libadler2-af5b0e47f1b187b9.rmeta
+│       │   ├── libaho_corasick-1b7f3ecbcf3f171a.rlib
+│       │   ├── libaho_corasick-1b7f3ecbcf3f171a.rmeta
+│       │   ├── liballoc_no_stdlib-cc81188fe16931f8.rlib
+│       │   ├── liballoc_no_stdlib-cc81188fe16931f8.rmeta
+│       │   ├── liballoc_stdlib-e32a36e2e3b9cd7b.rlib
+│       │   ├── liballoc_stdlib-e32a36e2e3b9cd7b.rmeta
+│       │   ├── libanyhow-cb0106135621df54.rlib
+│       │   ├── libanyhow-cb0106135621df54.rmeta
+│       │   ├── libatk-13129fa6cc362e17.rlib
+│       │   ├── libatk-13129fa6cc362e17.rmeta
+│       │   ├── libatk_sys-d9d9730c808e8518.rlib
+│       │   ├── libatk_sys-d9d9730c808e8518.rmeta
+│       │   ├── libautocfg-9280f9c2f723f569.rlib
+│       │   ├── libautocfg-9280f9c2f723f569.rmeta
+│       │   ├── libbase64-9ded01860c590c16.rlib
+│       │   ├── libbase64-9ded01860c590c16.rmeta
+│       │   ├── libbitflags-473b852bda163ccf.rlib
+│       │   ├── libbitflags-473b852bda163ccf.rmeta
+│       │   ├── libbitflags-c5e8392f486cd43f.rlib
+│       │   ├── libbitflags-c5e8392f486cd43f.rmeta
+│       │   ├── libblock_buffer-84156d25b3c3d385.rlib
+│       │   ├── libblock_buffer-84156d25b3c3d385.rmeta
+│       │   ├── libbrotli-1845120df4c5cd55.rlib
+│       │   ├── libbrotli-1845120df4c5cd55.rmeta
+│       │   ├── libbrotli_decompressor-e57eb2187f4d6a4c.rlib
+│       │   ├── libbrotli_decompressor-e57eb2187f4d6a4c.rmeta
+│       │   ├── libbstr-d5f3ba365115ebd7.rlib
+│       │   ├── libbstr-d5f3ba365115ebd7.rmeta
+│       │   ├── libbyteorder-bf74668de8f2b493.rlib
+│       │   ├── libbyteorder-bf74668de8f2b493.rmeta
+│       │   ├── libbytes-e9fddd1bd45d8900.rlib
+│       │   ├── libbytes-e9fddd1bd45d8900.rmeta
+│       │   ├── libc-9c9836c48cf0592d.d
+│       │   ├── libcairo-0678ce0b8cf9b257.rlib
+│       │   ├── libcairo-0678ce0b8cf9b257.rmeta
+│       │   ├── libcairo_sys-385dc50794c5dc5d.rlib
+│       │   ├── libcairo_sys-385dc50794c5dc5d.rmeta
+│       │   ├── libcargo_toml-d6d3ba8d782f7439.rlib
+│       │   ├── libcargo_toml-d6d3ba8d782f7439.rmeta
+│       │   ├── libcc-68ccb9de7bddcbf4.rlib
+│       │   ├── libcc-68ccb9de7bddcbf4.rmeta
+│       │   ├── libcfb-0f46bab0abd2cb6c.rlib
+│       │   ├── libcfb-0f46bab0abd2cb6c.rmeta
+│       │   ├── libcfg_expr-76c0f148c90d0267.rlib
+│       │   ├── libcfg_expr-76c0f148c90d0267.rmeta
+│       │   ├── libcfg_expr-ba26cd147e3a8248.rlib
+│       │   ├── libcfg_expr-ba26cd147e3a8248.rmeta
+│       │   ├── libcfg_if-cb2748525c1e0288.rlib
+│       │   ├── libcfg_if-cb2748525c1e0288.rmeta
+│       │   ├── libconvert_case-0928d336c7f239df.rlib
+│       │   ├── libconvert_case-0928d336c7f239df.rmeta
+│       │   ├── libcpufeatures-e69806b0dee56216.rlib
+│       │   ├── libcpufeatures-e69806b0dee56216.rmeta
+│       │   ├── libcrc32fast-9163957251cda90c.rlib
+│       │   ├── libcrc32fast-9163957251cda90c.rmeta
+│       │   ├── libcrossbeam_channel-8ae62eef2387302c.rlib
+│       │   ├── libcrossbeam_channel-8ae62eef2387302c.rmeta
+│       │   ├── libcrossbeam_deque-6eff64acbf7d429b.rlib
+│       │   ├── libcrossbeam_deque-6eff64acbf7d429b.rmeta
+│       │   ├── libcrossbeam_epoch-200b34a9fc27e54b.rlib
+│       │   ├── libcrossbeam_epoch-200b34a9fc27e54b.rmeta
+│       │   ├── libcrossbeam_utils-87bf1fc038236a3e.rlib
+│       │   ├── libcrossbeam_utils-87bf1fc038236a3e.rmeta
+│       │   ├── libcrypto_common-02607a0a764a683c.rlib
+│       │   ├── libcrypto_common-02607a0a764a683c.rmeta
+│       │   ├── libcssparser-1e49d4c3941987a6.rlib
+│       │   ├── libcssparser-1e49d4c3941987a6.rmeta
+│       │   ├── libcssparser_macros-a583eb56892ac155.so
+│       │   ├── libcsv-f2052e1a6fad30e5.rlib
+│       │   ├── libcsv-f2052e1a6fad30e5.rmeta
+│       │   ├── libcsv_core-9f27b4cd2f221373.rlib
+│       │   ├── libcsv_core-9f27b4cd2f221373.rmeta
+│       │   ├── libctor-79da51bea8ab36ca.so
+│       │   ├── libdarling-b9746b8e5e65e74e.rlib
+│       │   ├── libdarling-b9746b8e5e65e74e.rmeta
+│       │   ├── libdarling_core-63d51d043acc9375.rlib
+│       │   ├── libdarling_core-63d51d043acc9375.rmeta
+│       │   ├── libdarling_macro-44464d2faa927b5b.so
+│       │   ├── libdebug_unreachable-b8aa6216bce7eec3.rlib
+│       │   ├── libdebug_unreachable-b8aa6216bce7eec3.rmeta
+│       │   ├── libderive_more-c160597a889afc85.so
+│       │   ├── libdigest-cfca3daec1be695c.rlib
+│       │   ├── libdigest-cfca3daec1be695c.rmeta
+│       │   ├── libdirs_next-7d620c9753ffc43f.rlib
+│       │   ├── libdirs_next-7d620c9753ffc43f.rmeta
+│       │   ├── libdirs_sys_next-0afb42b863351952.rlib
+│       │   ├── libdirs_sys_next-0afb42b863351952.rmeta
+│       │   ├── libdisplaydoc-f09e92e998eb8f82.so
+│       │   ├── libdtoa-1f44ad2db860c5a3.rlib
+│       │   ├── libdtoa-1f44ad2db860c5a3.rmeta
+│       │   ├── libdtoa_short-c1ac67b434f7896c.rlib
+│       │   ├── libdtoa_short-c1ac67b434f7896c.rmeta
+│       │   ├── libdunce-47915fe7b5d83d3c.rlib
+│       │   ├── libdunce-47915fe7b5d83d3c.rmeta
+│       │   ├── libembed_resource-4d5461233e6cd54f.rlib
+│       │   ├── libembed_resource-4d5461233e6cd54f.rmeta
+│       │   ├── libencoding_rs-0104e72069822780.rlib
+│       │   ├── libencoding_rs-0104e72069822780.rmeta
+│       │   ├── libequivalent-fb6cc83cf281e9bc.rlib
+│       │   ├── libequivalent-fb6cc83cf281e9bc.rmeta
+│       │   ├── libfastrand-4c7d3317299366b7.rlib
+│       │   ├── libfastrand-4c7d3317299366b7.rmeta
+│       │   ├── libfdeflate-fdc3ba469c7432f9.rlib
+│       │   ├── libfdeflate-fdc3ba469c7432f9.rmeta
+│       │   ├── libfield_offset-e282d4ecc77dbce1.rlib
+│       │   ├── libfield_offset-e282d4ecc77dbce1.rmeta
+│       │   ├── libfiletime-fea2f6e7a631237f.rlib
+│       │   ├── libfiletime-fea2f6e7a631237f.rmeta
+│       │   ├── libflate2-f3975ad901c0b851.rlib
+│       │   ├── libflate2-f3975ad901c0b851.rmeta
+│       │   ├── libfnv-293287ae6d18546d.rlib
+│       │   ├── libfnv-293287ae6d18546d.rmeta
+│       │   ├── libform_urlencoded-9d1ba0e264b8f657.rlib
+│       │   ├── libform_urlencoded-9d1ba0e264b8f657.rmeta
+│       │   ├── libform_urlencoded-b360c402ab379b06.rlib
+│       │   ├── libform_urlencoded-b360c402ab379b06.rmeta
+│       │   ├── libfutf-d250804e04a533fc.rlib
+│       │   ├── libfutf-d250804e04a533fc.rmeta
+│       │   ├── libfutures_channel-9ea0bf10b0e17f86.rlib
+│       │   ├── libfutures_channel-9ea0bf10b0e17f86.rmeta
+│       │   ├── libfutures_core-61cc14625ddc4347.rlib
+│       │   ├── libfutures_core-61cc14625ddc4347.rmeta
+│       │   ├── libfutures_executor-f5bb197872d50ea9.rlib
+│       │   ├── libfutures_executor-f5bb197872d50ea9.rmeta
+│       │   ├── libfutures_io-83cfef114f18ef98.rlib
+│       │   ├── libfutures_io-83cfef114f18ef98.rmeta
+│       │   ├── libfutures_macro-29412c1d89c49486.so
+│       │   ├── libfutures_task-10180464d5af716d.rlib
+│       │   ├── libfutures_task-10180464d5af716d.rmeta
+│       │   ├── libfutures_util-a24462057690f1fe.rlib
+│       │   ├── libfutures_util-a24462057690f1fe.rmeta
+│       │   ├── libfxhash-4e2622675201e2c1.rlib
+│       │   ├── libfxhash-4e2622675201e2c1.rmeta
+│       │   ├── libgdk-fd51d227a1779796.rlib
+│       │   ├── libgdk-fd51d227a1779796.rmeta
+│       │   ├── libgdk_pixbuf-ec38ae731b914c87.rlib
+│       │   ├── libgdk_pixbuf-ec38ae731b914c87.rmeta
+│       │   ├── libgdk_pixbuf_sys-fdc1d802ec04cd19.rlib
+│       │   ├── libgdk_pixbuf_sys-fdc1d802ec04cd19.rmeta
+│       │   ├── libgdk_sys-bdcb94e2072465e3.rlib
+│       │   ├── libgdk_sys-bdcb94e2072465e3.rmeta
+│       │   ├── libgdk_wayland_sys-bbfe3482164418e6.rlib
+│       │   ├── libgdk_wayland_sys-bbfe3482164418e6.rmeta
+│       │   ├── libgdk_x11_sys-20ea7ad1a683efbf.rlib
+│       │   ├── libgdk_x11_sys-20ea7ad1a683efbf.rmeta
+│       │   ├── libgeneric_array-19356362d6f962e8.rlib
+│       │   ├── libgeneric_array-19356362d6f962e8.rmeta
+│       │   ├── libgetrandom-0e1cb3a3a72c087b.rlib
+│       │   ├── libgetrandom-0e1cb3a3a72c087b.rmeta
+│       │   ├── libgetrandom-5422fbed6c906ea1.rlib
+│       │   ├── libgetrandom-5422fbed6c906ea1.rmeta
+│       │   ├── libgetrandom-e4a29fbc9a1e6161.rlib
+│       │   ├── libgetrandom-e4a29fbc9a1e6161.rmeta
+│       │   ├── libgio-dc5b90b69e10fe84.rlib
+│       │   ├── libgio-dc5b90b69e10fe84.rmeta
+│       │   ├── libgio_sys-e04cc3c073f872fa.rlib
+│       │   ├── libgio_sys-e04cc3c073f872fa.rmeta
+│       │   ├── libglib-78fb0ee77007f55b.rlib
+│       │   ├── libglib-78fb0ee77007f55b.rmeta
+│       │   ├── libglib_macros-584794d614268d3d.so
+│       │   ├── libglib_sys-b58d0d31046ea412.rlib
+│       │   ├── libglib_sys-b58d0d31046ea412.rmeta
+│       │   ├── libglob-efea7dff89a0408c.rlib
+│       │   ├── libglob-efea7dff89a0408c.rmeta
+│       │   ├── libglobset-a7b63028344d57e5.rlib
+│       │   ├── libglobset-a7b63028344d57e5.rmeta
+│       │   ├── libgobject_sys-a6ba36af1d591f59.rlib
+│       │   ├── libgobject_sys-a6ba36af1d591f59.rmeta
+│       │   ├── libgtk-e42c97af9a2b27ad.rlib
+│       │   ├── libgtk-e42c97af9a2b27ad.rmeta
+│       │   ├── libgtk3_macros-d134ec9617326c4c.so
+│       │   ├── libgtk_sys-ad1e9badf59dc3da.rlib
+│       │   ├── libgtk_sys-ad1e9badf59dc3da.rmeta
+│       │   ├── libhashbrown-6c3187470aeae78e.rlib
+│       │   ├── libhashbrown-6c3187470aeae78e.rmeta
+│       │   ├── libhashbrown-a7922e91caf03274.rlib
+│       │   ├── libhashbrown-a7922e91caf03274.rmeta
+│       │   ├── libheck-022ddcbe783e6ebf.rlib
+│       │   ├── libheck-022ddcbe783e6ebf.rmeta
+│       │   ├── libheck-a6a7539774212eec.rlib
+│       │   ├── libheck-a6a7539774212eec.rmeta
+│       │   ├── libheck-eb50d75f7af7f099.rlib
+│       │   ├── libheck-eb50d75f7af7f099.rmeta
+│       │   ├── libhtml5ever-c506c499f2f7287d.rlib
+│       │   ├── libhtml5ever-c506c499f2f7287d.rmeta
+│       │   ├── libhtml5ever-daa15e0ea95ed98d.rlib
+│       │   ├── libhtml5ever-daa15e0ea95ed98d.rmeta
+│       │   ├── libhttp-af18e4ff9e3dfe38.rlib
+│       │   ├── libhttp-af18e4ff9e3dfe38.rmeta
+│       │   ├── libhttp_range-8f1eb3e94ba23ab8.rlib
+│       │   ├── libhttp_range-8f1eb3e94ba23ab8.rmeta
+│       │   ├── libico-a1baf13a4394b0a4.rlib
+│       │   ├── libico-a1baf13a4394b0a4.rmeta
+│       │   ├── libicu_collections-20fe74e46043cb72.rlib
+│       │   ├── libicu_collections-20fe74e46043cb72.rmeta
+│       │   ├── libicu_locale_core-83029e1b1200409d.rlib
+│       │   ├── libicu_locale_core-83029e1b1200409d.rmeta
+│       │   ├── libicu_normalizer-7c1b292f24cdcfa0.rlib
+│       │   ├── libicu_normalizer-7c1b292f24cdcfa0.rmeta
+│       │   ├── libicu_normalizer_data-8af801d1e279beea.rlib
+│       │   ├── libicu_normalizer_data-8af801d1e279beea.rmeta
+│       │   ├── libicu_properties-6e528be0ad41f19d.rlib
+│       │   ├── libicu_properties-6e528be0ad41f19d.rmeta
+│       │   ├── libicu_properties_data-91561ce0fcc0a22a.rlib
+│       │   ├── libicu_properties_data-91561ce0fcc0a22a.rmeta
+│       │   ├── libicu_provider-b0e7571008775241.rlib
+│       │   ├── libicu_provider-b0e7571008775241.rmeta
+│       │   ├── libident_case-810f24c216404eb6.rlib
+│       │   ├── libident_case-810f24c216404eb6.rmeta
+│       │   ├── libidna-b1f3aa41ae7493c1.rlib
+│       │   ├── libidna-b1f3aa41ae7493c1.rmeta
+│       │   ├── libidna_adapter-abe859e6df8a1018.rlib
+│       │   ├── libidna_adapter-abe859e6df8a1018.rmeta
+│       │   ├── libignore-5d45cdb57cc101fe.rlib
+│       │   ├── libignore-5d45cdb57cc101fe.rmeta
+│       │   ├── libindexmap-2ca38de8ea07d198.rlib
+│       │   ├── libindexmap-2ca38de8ea07d198.rmeta
+│       │   ├── libindexmap-58d13af8978bf8d7.rlib
+│       │   ├── libindexmap-58d13af8978bf8d7.rmeta
+│       │   ├── libinfer-bbc96d40cf3f5535.rlib
+│       │   ├── libinfer-bbc96d40cf3f5535.rmeta
+│       │   ├── libinstant-bb01c7c12a3d0298.rlib
+│       │   ├── libinstant-bb01c7c12a3d0298.rmeta
+│       │   ├── libitoa-2622358e5e622a7a.rlib
+│       │   ├── libitoa-2622358e5e622a7a.rmeta
+│       │   ├── libitoa-b11a99c3fb91e0ba.rlib
+│       │   ├── libitoa-b11a99c3fb91e0ba.rmeta
+│       │   ├── libjavascriptcore-d6988171cfd63f33.rlib
+│       │   ├── libjavascriptcore-d6988171cfd63f33.rmeta
+│       │   ├── libjavascriptcore_rs_sys-048746141aacba81.rlib
+│       │   ├── libjavascriptcore_rs_sys-048746141aacba81.rmeta
+│       │   ├── libjson_patch-0a76c8902459001b.rlib
+│       │   ├── libjson_patch-0a76c8902459001b.rmeta
+│       │   ├── libjson_patch-d12266521eecdf86.rlib
+│       │   ├── libjson_patch-d12266521eecdf86.rmeta
+│       │   ├── libjsonptr-09706302ca424503.rlib
+│       │   ├── libjsonptr-09706302ca424503.rmeta
+│       │   ├── libjsonptr-12ec243509d044e7.rlib
+│       │   ├── libjsonptr-12ec243509d044e7.rmeta
+│       │   ├── libkuchikiki-5b41197b4c5068b0.rlib
+│       │   ├── libkuchikiki-5b41197b4c5068b0.rmeta
+│       │   ├── libkuchikiki-5e947a78e3dabef3.rlib
+│       │   ├── libkuchikiki-5e947a78e3dabef3.rmeta
+│       │   ├── liblazy_static-a60c6f0d6f5b0a48.rlib
+│       │   ├── liblazy_static-a60c6f0d6f5b0a48.rmeta
+│       │   ├── liblibc-9c9836c48cf0592d.rlib
+│       │   ├── liblibc-9c9836c48cf0592d.rmeta
+│       │   ├── liblinux_raw_sys-a5eb9065dcdc6b30.rlib
+│       │   ├── liblinux_raw_sys-a5eb9065dcdc6b30.rmeta
+│       │   ├── liblitemap-2646f13c8202c17e.rlib
+│       │   ├── liblitemap-2646f13c8202c17e.rmeta
+│       │   ├── liblock_api-ddb6ee63b8707003.rlib
+│       │   ├── liblock_api-ddb6ee63b8707003.rmeta
+│       │   ├── liblog-99b206798956b112.rlib
+│       │   ├── liblog-99b206798956b112.rmeta
+│       │   ├── libmac-5d3d644fa06c280c.rlib
+│       │   ├── libmac-5d3d644fa06c280c.rmeta
+│       │   ├── libmarkup5ever-56cf226a74688b6d.rlib
+│       │   ├── libmarkup5ever-56cf226a74688b6d.rmeta
+│       │   ├── libmarkup5ever-b52e0a870ae59367.rlib
+│       │   ├── libmarkup5ever-b52e0a870ae59367.rmeta
+│       │   ├── libmatches-6f4b0627d6b2705e.rlib
+│       │   ├── libmatches-6f4b0627d6b2705e.rmeta
+│       │   ├── libmemchr-956eb8a303448e86.rlib
+│       │   ├── libmemchr-956eb8a303448e86.rmeta
+│       │   ├── libmemoffset-95a85221d994e62e.rlib
+│       │   ├── libmemoffset-95a85221d994e62e.rmeta
+│       │   ├── libminiz_oxide-3f54dbaf647422e3.rlib
+│       │   ├── libminiz_oxide-3f54dbaf647422e3.rmeta
+│       │   ├── libnodrop-42e3a3f6b10ad4e8.rlib
+│       │   ├── libnodrop-42e3a3f6b10ad4e8.rmeta
+│       │   ├── libonce_cell-140027e2059e248c.rlib
+│       │   ├── libonce_cell-140027e2059e248c.rmeta
+│       │   ├── libpango-8411486d85d6d36a.rlib
+│       │   ├── libpango-8411486d85d6d36a.rmeta
+│       │   ├── libpango_sys-11627770fd4970fc.rlib
+│       │   ├── libpango_sys-11627770fd4970fc.rmeta
+│       │   ├── libparking_lot-8f0a10144e3f2c2a.rlib
+│       │   ├── libparking_lot-8f0a10144e3f2c2a.rmeta
+│       │   ├── libparking_lot_core-b5a6f96fe69517bd.rlib
+│       │   ├── libparking_lot_core-b5a6f96fe69517bd.rmeta
+│       │   ├── libpercent_encoding-11747775ba895eae.rlib
+│       │   ├── libpercent_encoding-11747775ba895eae.rmeta
+│       │   ├── libpercent_encoding-4a9e4925548880d4.rlib
+│       │   ├── libpercent_encoding-4a9e4925548880d4.rmeta
+│       │   ├── libphf-bd13fe5dd5ac83a1.rlib
+│       │   ├── libphf-bd13fe5dd5ac83a1.rmeta
+│       │   ├── libphf-c33365e8a8718fb4.rlib
+│       │   ├── libphf-c33365e8a8718fb4.rmeta
+│       │   ├── libphf-dec746b66e4dd2a6.rlib
+│       │   ├── libphf-dec746b66e4dd2a6.rmeta
+│       │   ├── libphf-f81e8bac55ae85a4.rlib
+│       │   ├── libphf-f81e8bac55ae85a4.rmeta
+│       │   ├── libphf_codegen-3828660b9914c18b.rlib
+│       │   ├── libphf_codegen-3828660b9914c18b.rmeta
+│       │   ├── libphf_codegen-e750b3670448f27f.rlib
+│       │   ├── libphf_codegen-e750b3670448f27f.rmeta
+│       │   ├── libphf_generator-40efa800fa7f3dd9.rlib
+│       │   ├── libphf_generator-40efa800fa7f3dd9.rmeta
+│       │   ├── libphf_generator-8859d9a99cf43f05.rlib
+│       │   ├── libphf_generator-8859d9a99cf43f05.rmeta
+│       │   ├── libphf_generator-c3c7b0deed21b2ce.rlib
+│       │   ├── libphf_generator-c3c7b0deed21b2ce.rmeta
+│       │   ├── libphf_macros-17c5a7228407edc8.so
+│       │   ├── libphf_macros-3af391d7b258f28a.so
+│       │   ├── libphf_shared-15225aa9444d5e7a.rlib
+│       │   ├── libphf_shared-15225aa9444d5e7a.rmeta
+│       │   ├── libphf_shared-33a960114c85a186.rlib
+│       │   ├── libphf_shared-33a960114c85a186.rmeta
+│       │   ├── libphf_shared-b845dc25ac445e14.rlib
+│       │   ├── libphf_shared-b845dc25ac445e14.rmeta
+│       │   ├── libphf_shared-bd20b1991185a0ed.rlib
+│       │   ├── libphf_shared-bd20b1991185a0ed.rmeta
+│       │   ├── libpin_project_lite-8304a63f5944e937.rlib
+│       │   ├── libpin_project_lite-8304a63f5944e937.rmeta
+│       │   ├── libpin_utils-4afe9bfe4113f5ad.rlib
+│       │   ├── libpin_utils-4afe9bfe4113f5ad.rmeta
+│       │   ├── libpkg_config-318096eedab39bc1.rlib
+│       │   ├── libpkg_config-318096eedab39bc1.rmeta
+│       │   ├── libpng-885dae1a82a0cc66.rlib
+│       │   ├── libpng-885dae1a82a0cc66.rmeta
+│       │   ├── libpotential_utf-dfca70f55b7b0ce2.rlib
+│       │   ├── libpotential_utf-dfca70f55b7b0ce2.rmeta
+│       │   ├── libppv_lite86-2b81e3e9bc1c058a.rlib
+│       │   ├── libppv_lite86-2b81e3e9bc1c058a.rmeta
+│       │   ├── libprecomputed_hash-3afebc8e17490e65.rlib
+│       │   ├── libprecomputed_hash-3afebc8e17490e65.rmeta
+│       │   ├── libproc_macro2-6c7c911819aa3c74.rlib
+│       │   ├── libproc_macro2-6c7c911819aa3c74.rmeta
+│       │   ├── libproc_macro_crate-f2341b570a87d61a.rlib
+│       │   ├── libproc_macro_crate-f2341b570a87d61a.rmeta
+│       │   ├── libproc_macro_error-7fbd9199c146acb7.rlib
+│       │   ├── libproc_macro_error-7fbd9199c146acb7.rmeta
+│       │   ├── libproc_macro_error_attr-c125fabd42371746.so
+│       │   ├── libproc_macro_hack-9c6365aaf3d0c4b6.so
+│       │   ├── libquote-982a968c3358e50a.rlib
+│       │   ├── libquote-982a968c3358e50a.rmeta
+│       │   ├── librand-2adefde1f1492a1f.rlib
+│       │   ├── librand-2adefde1f1492a1f.rmeta
+│       │   ├── librand-3cae161562329621.rlib
+│       │   ├── librand-3cae161562329621.rmeta
+│       │   ├── librand-f06d4d9dbd1a111e.rlib
+│       │   ├── librand-f06d4d9dbd1a111e.rmeta
+│       │   ├── librand_chacha-29460cbcdc53ab0e.rlib
+│       │   ├── librand_chacha-29460cbcdc53ab0e.rmeta
+│       │   ├── librand_chacha-e3397f72c3ef38fc.rlib
+│       │   ├── librand_chacha-e3397f72c3ef38fc.rmeta
+│       │   ├── librand_core-7895376a369bdda9.rlib
+│       │   ├── librand_core-7895376a369bdda9.rmeta
+│       │   ├── librand_core-eae3602b18e41230.rlib
+│       │   ├── librand_core-eae3602b18e41230.rmeta
+│       │   ├── librand_pcg-7e7f0dc7eced442e.rlib
+│       │   ├── librand_pcg-7e7f0dc7eced442e.rmeta
+│       │   ├── libraw_window_handle-89f0d9d3f744ff83.rlib
+│       │   ├── libraw_window_handle-89f0d9d3f744ff83.rmeta
+│       │   ├── libregex_automata-812a0eb5fed3728b.rlib
+│       │   ├── libregex_automata-812a0eb5fed3728b.rmeta
+│       │   ├── libregex_syntax-794f8668a682c074.rlib
+│       │   ├── libregex_syntax-794f8668a682c074.rmeta
+│       │   ├── librfd-3628302ecc29b582.rlib
+│       │   ├── librfd-3628302ecc29b582.rmeta
+│       │   ├── librustc_version-d23e013d1f9c7a62.rlib
+│       │   ├── librustc_version-d23e013d1f9c7a62.rmeta
+│       │   ├── librustix-38bcc0287be8b6c8.rlib
+│       │   ├── librustix-38bcc0287be8b6c8.rmeta
+│       │   ├── libryu-27d616b1525b0bd5.rlib
+│       │   ├── libryu-27d616b1525b0bd5.rmeta
+│       │   ├── libsame_file-885ba4335dbafcd5.rlib
+│       │   ├── libsame_file-885ba4335dbafcd5.rmeta
+│       │   ├── libscopeguard-05a74e14a06af6ee.rlib
+│       │   ├── libscopeguard-05a74e14a06af6ee.rmeta
+│       │   ├── libselectors-6696a99a90ea5ce1.rlib
+│       │   ├── libselectors-6696a99a90ea5ce1.rmeta
+│       │   ├── libsemver-9003f1dfce6830b3.rlib
+│       │   ├── libsemver-9003f1dfce6830b3.rmeta
+│       │   ├── libsemver-f105bdaea43e2301.rlib
+│       │   ├── libsemver-f105bdaea43e2301.rmeta
+│       │   ├── libserde-720d62ef2ad45f30.rlib
+│       │   ├── libserde-720d62ef2ad45f30.rmeta
+│       │   ├── libserde_derive-281f88a588553224.so
+│       │   ├── libserde_json-0afe1a19c22a8ef3.rlib
+│       │   ├── libserde_json-0afe1a19c22a8ef3.rmeta
+│       │   ├── libserde_json-219cbc84c6c40bae.rlib
+│       │   ├── libserde_json-219cbc84c6c40bae.rmeta
+│       │   ├── libserde_repr-dc43083ab15736f5.so
+│       │   ├── libserde_spanned-94ab67727ccff6a5.rlib
+│       │   ├── libserde_spanned-94ab67727ccff6a5.rmeta
+│       │   ├── libserde_with-e3c7181c734a3ab0.rlib
+│       │   ├── libserde_with-e3c7181c734a3ab0.rmeta
+│       │   ├── libserde_with_macros-80d47c7f6dd8e02d.so
+│       │   ├── libserialize_to_javascript-d2d5e3d2328780f5.rlib
+│       │   ├── libserialize_to_javascript-d2d5e3d2328780f5.rmeta
+│       │   ├── libserialize_to_javascript_impl-22f7d25bcce3ce98.so
+│       │   ├── libservo_arc-c58d39aedd8dc609.rlib
+│       │   ├── libservo_arc-c58d39aedd8dc609.rmeta
+│       │   ├── libsha2-ae6544ba854a1991.rlib
+│       │   ├── libsha2-ae6544ba854a1991.rmeta
+│       │   ├── libshlex-83c7e0da01d13271.rlib
+│       │   ├── libshlex-83c7e0da01d13271.rmeta
+│       │   ├── libsimd_adler32-0912ca60551a92a3.rlib
+│       │   ├── libsimd_adler32-0912ca60551a92a3.rmeta
+│       │   ├── libsiphasher-bbcb89d2f79153d5.rlib
+│       │   ├── libsiphasher-bbcb89d2f79153d5.rmeta
+│       │   ├── libsiphasher-eb9f6fcaed9e690a.rlib
+│       │   ├── libsiphasher-eb9f6fcaed9e690a.rmeta
+│       │   ├── libslab-63943b7eb7b60ca4.rlib
+│       │   ├── libslab-63943b7eb7b60ca4.rmeta
+│       │   ├── libsmallvec-8995de69024cacd0.rlib
+│       │   ├── libsmallvec-8995de69024cacd0.rmeta
+│       │   ├── libsoup-affa734f990ded7a.rlib
+│       │   ├── libsoup-affa734f990ded7a.rmeta
+│       │   ├── libsoup_sys-54543cd8191b49e4.rlib
+│       │   ├── libsoup_sys-54543cd8191b49e4.rmeta
+│       │   ├── libstable_deref_trait-06ef3ba6e7277ca9.rlib
+│       │   ├── libstable_deref_trait-06ef3ba6e7277ca9.rmeta
+│       │   ├── libstate-4295cd3e27476bc6.rlib
+│       │   ├── libstate-4295cd3e27476bc6.rmeta
+│       │   ├── libstring_cache-c65ee8c7f1615795.rlib
+│       │   ├── libstring_cache-c65ee8c7f1615795.rmeta
+│       │   ├── libstring_cache_codegen-d76b38f30771c3fc.rlib
+│       │   ├── libstring_cache_codegen-d76b38f30771c3fc.rmeta
+│       │   ├── libstrsim-ad112818830f0ac6.rlib
+│       │   ├── libstrsim-ad112818830f0ac6.rmeta
+│       │   ├── libsyn-4409d60084ea512e.rlib
+│       │   ├── libsyn-4409d60084ea512e.rmeta
+│       │   ├── libsyn-5ad6df5f04a8f46f.rlib
+│       │   ├── libsyn-5ad6df5f04a8f46f.rmeta
+│       │   ├── libsynstructure-2158bcfbc69ed1f3.rlib
+│       │   ├── libsynstructure-2158bcfbc69ed1f3.rmeta
+│       │   ├── libsystem_deps-05901b5a67253818.rlib
+│       │   ├── libsystem_deps-05901b5a67253818.rmeta
+│       │   ├── libsystem_deps-5ece4a5655b3426b.rlib
+│       │   ├── libsystem_deps-5ece4a5655b3426b.rmeta
+│       │   ├── libtao-3d6dd857f3a1a51b.rlib
+│       │   ├── libtao-3d6dd857f3a1a51b.rmeta
+│       │   ├── libtar-191677cb361a0cdf.rlib
+│       │   ├── libtar-191677cb361a0cdf.rmeta
+│       │   ├── libtarget_lexicon-368e7e9394533810.rlib
+│       │   ├── libtarget_lexicon-368e7e9394533810.rmeta
+│       │   ├── libtauri-007a7bd45c63cefb.rlib
+│       │   ├── libtauri-007a7bd45c63cefb.rmeta
+│       │   ├── libtauri_build-96f9385cdde9f84f.rlib
+│       │   ├── libtauri_build-96f9385cdde9f84f.rmeta
+│       │   ├── libtauri_codegen-c43a35e2e7b40cf3.rlib
+│       │   ├── libtauri_codegen-c43a35e2e7b40cf3.rmeta
+│       │   ├── libtauri_macros-af573eabeb7dde04.so
+│       │   ├── libtauri_runtime-c59630d183a5ed99.rlib
+│       │   ├── libtauri_runtime-c59630d183a5ed99.rmeta
+│       │   ├── libtauri_runtime_wry-39ed12e26b96a659.rlib
+│       │   ├── libtauri_runtime_wry-39ed12e26b96a659.rmeta
+│       │   ├── libtauri_utils-51d7243ab6d3079f.rlib
+│       │   ├── libtauri_utils-51d7243ab6d3079f.rmeta
+│       │   ├── libtauri_utils-6a52734b310ed62c.rlib
+│       │   ├── libtauri_utils-6a52734b310ed62c.rmeta
+│       │   ├── libtauri_winres-e1d543e2f346a6b9.rlib
+│       │   ├── libtauri_winres-e1d543e2f346a6b9.rmeta
+│       │   ├── libtempfile-e9dd2d955365e05e.rlib
+│       │   ├── libtempfile-e9dd2d955365e05e.rmeta
+│       │   ├── libtendril-314eb722d2682e50.rlib
+│       │   ├── libtendril-314eb722d2682e50.rmeta
+│       │   ├── libthin_slice-3fe2cab965fecddb.rlib
+│       │   ├── libthin_slice-3fe2cab965fecddb.rmeta
+│       │   ├── libthiserror-e331dfbd12363c1e.rlib
+│       │   ├── libthiserror-e331dfbd12363c1e.rmeta
+│       │   ├── libthiserror_impl-1664de7404b21c0a.so
+│       │   ├── libtinystr-6234c532ac691cb6.rlib
+│       │   ├── libtinystr-6234c532ac691cb6.rmeta
+│       │   ├── libtokio-fe849bb8769e990d.rlib
+│       │   ├── libtokio-fe849bb8769e990d.rmeta
+│       │   ├── libtoml-5f55a4d62faebc66.rlib
+│       │   ├── libtoml-5f55a4d62faebc66.rmeta
+│       │   ├── libtoml-9307f843dc956958.rlib
+│       │   ├── libtoml-9307f843dc956958.rmeta
+│       │   ├── libtoml-b2eaebe3f3b483ee.rlib
+│       │   ├── libtoml-b2eaebe3f3b483ee.rmeta
+│       │   ├── libtoml_datetime-562ffa14bc469cc3.rlib
+│       │   ├── libtoml_datetime-562ffa14bc469cc3.rmeta
+│       │   ├── libtoml_edit-b16a026bb7efe927.rlib
+│       │   ├── libtoml_edit-b16a026bb7efe927.rmeta
+│       │   ├── libtoml_edit-d0873c403be4efc1.rlib
+│       │   ├── libtoml_edit-d0873c403be4efc1.rmeta
+│       │   ├── libtoml_write-1a1891766be87659.rlib
+│       │   ├── libtoml_write-1a1891766be87659.rmeta
+│       │   ├── libtypenum-4d9d080de023a2a4.rlib
+│       │   ├── libtypenum-4d9d080de023a2a4.rmeta
+│       │   ├── libunicode_ident-27b708a2ea44f53b.rlib
+│       │   ├── libunicode_ident-27b708a2ea44f53b.rmeta
+│       │   ├── libunicode_segmentation-012cbb8a3d8a0967.rlib
+│       │   ├── libunicode_segmentation-012cbb8a3d8a0967.rmeta
+│       │   ├── liburl-80f538b25e7efbbb.rlib
+│       │   ├── liburl-80f538b25e7efbbb.rmeta
+│       │   ├── liburl-ea2b940b566909df.rlib
+│       │   ├── liburl-ea2b940b566909df.rmeta
+│       │   ├── libutf8-4362425f32391cf6.rlib
+│       │   ├── libutf8-4362425f32391cf6.rmeta
+│       │   ├── libutf8_iter-25f6afe9a4463498.rlib
+│       │   ├── libutf8_iter-25f6afe9a4463498.rmeta
+│       │   ├── libuuid-636ec8e233ca0c4d.rlib
+│       │   ├── libuuid-636ec8e233ca0c4d.rmeta
+│       │   ├── libversion_check-a216429c4cbdde93.rlib
+│       │   ├── libversion_check-a216429c4cbdde93.rmeta
+│       │   ├── libversion_compare-25d67372a93d2eb8.rlib
+│       │   ├── libversion_compare-25d67372a93d2eb8.rmeta
+│       │   ├── libversion_compare-2ec694ebe4912d49.rlib
+│       │   ├── libversion_compare-2ec694ebe4912d49.rmeta
+│       │   ├── libwalkdir-61d89ec0cab3a80b.rlib
+│       │   ├── libwalkdir-61d89ec0cab3a80b.rmeta
+│       │   ├── libwebkit2gtk-038172fd9dda2dc0.rlib
+│       │   ├── libwebkit2gtk-038172fd9dda2dc0.rmeta
+│       │   ├── libwebkit2gtk_sys-628821df2d018cd4.rlib
+│       │   ├── libwebkit2gtk_sys-628821df2d018cd4.rmeta
+│       │   ├── libwinnow-c3069a2d8d8dfc76.rlib
+│       │   ├── libwinnow-c3069a2d8d8dfc76.rmeta
+│       │   ├── libwinnow-d9fd3bd1bb11ad5b.rlib
+│       │   ├── libwinnow-d9fd3bd1bb11ad5b.rmeta
+│       │   ├── libwriteable-de094abb631f85c5.rlib
+│       │   ├── libwriteable-de094abb631f85c5.rmeta
+│       │   ├── libwry-da72d105a7f8028a.rlib
+│       │   ├── libwry-da72d105a7f8028a.rmeta
+│       │   ├── libx11-b9bb38845a38fc7d.rlib
+│       │   ├── libx11-b9bb38845a38fc7d.rmeta
+│       │   ├── libx11_dl-90b74afebe6c4ab4.rlib
+│       │   ├── libx11_dl-90b74afebe6c4ab4.rmeta
+│       │   ├── libxattr-0a85b9fa6a689c05.rlib
+│       │   ├── libxattr-0a85b9fa6a689c05.rmeta
+│       │   ├── libyoke-6ad72ee8895fb7de.rlib
+│       │   ├── libyoke-6ad72ee8895fb7de.rmeta
+│       │   ├── libyoke_derive-5b8c7c9941f40c51.so
+│       │   ├── libzerocopy-ad748e34f50b601f.rlib
+│       │   ├── libzerocopy-ad748e34f50b601f.rmeta
+│       │   ├── libzerofrom-5487bce3a513117f.rlib
+│       │   ├── libzerofrom-5487bce3a513117f.rmeta
+│       │   ├── libzerofrom_derive-1f86de79071eab8c.so
+│       │   ├── libzerotrie-985755d221d95289.rlib
+│       │   ├── libzerotrie-985755d221d95289.rmeta
+│       │   ├── libzerovec-c0fffd80c8a64ad9.rlib
+│       │   ├── libzerovec-c0fffd80c8a64ad9.rmeta
+│       │   ├── libzerovec_derive-c6e46e8abab7a50d.so
+│       │   ├── linux_raw_sys-a5eb9065dcdc6b30.d
+│       │   ├── litemap-2646f13c8202c17e.d
+│       │   ├── lock_api-ddb6ee63b8707003.d
+│       │   ├── log-99b206798956b112.d
+│       │   ├── mac-5d3d644fa06c280c.d
+│       │   ├── markup5ever-56cf226a74688b6d.d
+│       │   ├── markup5ever-b52e0a870ae59367.d
+│       │   ├── matches-6f4b0627d6b2705e.d
+│       │   ├── memchr-956eb8a303448e86.d
+│       │   ├── memoffset-95a85221d994e62e.d
+│       │   ├── miniz_oxide-3f54dbaf647422e3.d
+│       │   ├── nodrop-42e3a3f6b10ad4e8.d
+│       │   ├── once_cell-140027e2059e248c.d
+│       │   ├── pango-8411486d85d6d36a.d
+│       │   ├── pango_sys-11627770fd4970fc.d
+│       │   ├── parking_lot-8f0a10144e3f2c2a.d
+│       │   ├── parking_lot_core-b5a6f96fe69517bd.d
+│       │   ├── percent_encoding-11747775ba895eae.d
+│       │   ├── percent_encoding-4a9e4925548880d4.d
+│       │   ├── phf-bd13fe5dd5ac83a1.d
+│       │   ├── phf-c33365e8a8718fb4.d
+│       │   ├── phf-dec746b66e4dd2a6.d
+│       │   ├── phf-f81e8bac55ae85a4.d
+│       │   ├── phf_codegen-3828660b9914c18b.d
+│       │   ├── phf_codegen-e750b3670448f27f.d
+│       │   ├── phf_generator-40efa800fa7f3dd9.d
+│       │   ├── phf_generator-8859d9a99cf43f05.d
+│       │   ├── phf_generator-c3c7b0deed21b2ce.d
+│       │   ├── phf_macros-17c5a7228407edc8.d
+│       │   ├── phf_macros-3af391d7b258f28a.d
+│       │   ├── phf_shared-15225aa9444d5e7a.d
+│       │   ├── phf_shared-33a960114c85a186.d
+│       │   ├── phf_shared-b845dc25ac445e14.d
+│       │   ├── phf_shared-bd20b1991185a0ed.d
+│       │   ├── pin_project_lite-8304a63f5944e937.d
+│       │   ├── pin_utils-4afe9bfe4113f5ad.d
+│       │   ├── pkg_config-318096eedab39bc1.d
+│       │   ├── png-885dae1a82a0cc66.d
+│       │   ├── potential_utf-dfca70f55b7b0ce2.d
+│       │   ├── ppv_lite86-2b81e3e9bc1c058a.d
+│       │   ├── precomputed_hash-3afebc8e17490e65.d
+│       │   ├── proc_macro2-6c7c911819aa3c74.d
+│       │   ├── proc_macro_crate-f2341b570a87d61a.d
+│       │   ├── proc_macro_error-7fbd9199c146acb7.d
+│       │   ├── proc_macro_error_attr-c125fabd42371746.d
+│       │   ├── proc_macro_hack-9c6365aaf3d0c4b6.d
+│       │   ├── quote-982a968c3358e50a.d
+│       │   ├── rand-2adefde1f1492a1f.d
+│       │   ├── rand-3cae161562329621.d
+│       │   ├── rand-f06d4d9dbd1a111e.d
+│       │   ├── rand_chacha-29460cbcdc53ab0e.d
+│       │   ├── rand_chacha-e3397f72c3ef38fc.d
+│       │   ├── rand_core-7895376a369bdda9.d
+│       │   ├── rand_core-eae3602b18e41230.d
+│       │   ├── rand_pcg-7e7f0dc7eced442e.d
+│       │   ├── raw_window_handle-89f0d9d3f744ff83.d
+│       │   ├── regex_automata-812a0eb5fed3728b.d
+│       │   ├── regex_syntax-794f8668a682c074.d
+│       │   ├── rfd-3628302ecc29b582.d
+│       │   ├── rustc_version-d23e013d1f9c7a62.d
+│       │   ├── rustix-38bcc0287be8b6c8.d
+│       │   ├── ryu-27d616b1525b0bd5.d
+│       │   ├── same_file-885ba4335dbafcd5.d
+│       │   ├── scopeguard-05a74e14a06af6ee.d
+│       │   ├── scratchtable-40433ba8d23a5b1f.d
+│       │   ├── selectors-6696a99a90ea5ce1.d
+│       │   ├── semver-9003f1dfce6830b3.d
+│       │   ├── semver-f105bdaea43e2301.d
+│       │   ├── serde-720d62ef2ad45f30.d
+│       │   ├── serde_derive-281f88a588553224.d
+│       │   ├── serde_json-0afe1a19c22a8ef3.d
+│       │   ├── serde_json-219cbc84c6c40bae.d
+│       │   ├── serde_repr-dc43083ab15736f5.d
+│       │   ├── serde_spanned-94ab67727ccff6a5.d
+│       │   ├── serde_with-e3c7181c734a3ab0.d
+│       │   ├── serde_with_macros-80d47c7f6dd8e02d.d
+│       │   ├── serialize_to_javascript-d2d5e3d2328780f5.d
+│       │   ├── serialize_to_javascript_impl-22f7d25bcce3ce98.d
+│       │   ├── servo_arc-c58d39aedd8dc609.d
+│       │   ├── sha2-ae6544ba854a1991.d
+│       │   ├── shlex-83c7e0da01d13271.d
+│       │   ├── simd_adler32-0912ca60551a92a3.d
+│       │   ├── siphasher-bbcb89d2f79153d5.d
+│       │   ├── siphasher-eb9f6fcaed9e690a.d
+│       │   ├── slab-63943b7eb7b60ca4.d
+│       │   ├── smallvec-8995de69024cacd0.d
+│       │   ├── soup-affa734f990ded7a.d
+│       │   ├── soup_sys-54543cd8191b49e4.d
+│       │   ├── stable_deref_trait-06ef3ba6e7277ca9.d
+│       │   ├── state-4295cd3e27476bc6.d
+│       │   ├── string_cache-c65ee8c7f1615795.d
+│       │   ├── string_cache_codegen-d76b38f30771c3fc.d
+│       │   ├── strsim-ad112818830f0ac6.d
+│       │   ├── syn-4409d60084ea512e.d
+│       │   ├── syn-5ad6df5f04a8f46f.d
+│       │   ├── synstructure-2158bcfbc69ed1f3.d
+│       │   ├── system_deps-05901b5a67253818.d
+│       │   ├── system_deps-5ece4a5655b3426b.d
+│       │   ├── tao-3d6dd857f3a1a51b.d
+│       │   ├── tar-191677cb361a0cdf.d
+│       │   ├── target_lexicon-368e7e9394533810.d
+│       │   ├── tauri-007a7bd45c63cefb.d
+│       │   ├── tauri_build-96f9385cdde9f84f.d
+│       │   ├── tauri_codegen-c43a35e2e7b40cf3.d
+│       │   ├── tauri_macros-af573eabeb7dde04.d
+│       │   ├── tauri_runtime-c59630d183a5ed99.d
+│       │   ├── tauri_runtime_wry-39ed12e26b96a659.d
+│       │   ├── tauri_utils-51d7243ab6d3079f.d
+│       │   ├── tauri_utils-6a52734b310ed62c.d
+│       │   ├── tauri_winres-e1d543e2f346a6b9.d
+│       │   ├── tempfile-e9dd2d955365e05e.d
+│       │   ├── tendril-314eb722d2682e50.d
+│       │   ├── thin_slice-3fe2cab965fecddb.d
+│       │   ├── thiserror-e331dfbd12363c1e.d
+│       │   ├── thiserror_impl-1664de7404b21c0a.d
+│       │   ├── tinystr-6234c532ac691cb6.d
+│       │   ├── tokio-fe849bb8769e990d.d
+│       │   ├── toml-5f55a4d62faebc66.d
+│       │   ├── toml-9307f843dc956958.d
+│       │   ├── toml-b2eaebe3f3b483ee.d
+│       │   ├── toml_datetime-562ffa14bc469cc3.d
+│       │   ├── toml_edit-b16a026bb7efe927.d
+│       │   ├── toml_edit-d0873c403be4efc1.d
+│       │   ├── toml_write-1a1891766be87659.d
+│       │   ├── typenum-4d9d080de023a2a4.d
+│       │   ├── unicode_ident-27b708a2ea44f53b.d
+│       │   ├── unicode_segmentation-012cbb8a3d8a0967.d
+│       │   ├── url-80f538b25e7efbbb.d
+│       │   ├── url-ea2b940b566909df.d
+│       │   ├── utf8-4362425f32391cf6.d
+│       │   ├── utf8_iter-25f6afe9a4463498.d
+│       │   ├── uuid-636ec8e233ca0c4d.d
+│       │   ├── version_check-a216429c4cbdde93.d
+│       │   ├── version_compare-25d67372a93d2eb8.d
+│       │   ├── version_compare-2ec694ebe4912d49.d
+│       │   ├── walkdir-61d89ec0cab3a80b.d
+│       │   ├── webkit2gtk-038172fd9dda2dc0.d
+│       │   ├── webkit2gtk_sys-628821df2d018cd4.d
+│       │   ├── winnow-c3069a2d8d8dfc76.d
+│       │   ├── winnow-d9fd3bd1bb11ad5b.d
+│       │   ├── writeable-de094abb631f85c5.d
+│       │   ├── wry-da72d105a7f8028a.d
+│       │   ├── x11-b9bb38845a38fc7d.d
+│       │   ├── x11_dl-90b74afebe6c4ab4.d
+│       │   ├── xattr-0a85b9fa6a689c05.d
+│       │   ├── yoke-6ad72ee8895fb7de.d
+│       │   ├── yoke_derive-5b8c7c9941f40c51.d
+│       │   ├── zerocopy-ad748e34f50b601f.d
+│       │   ├── zerofrom-5487bce3a513117f.d
+│       │   ├── zerofrom_derive-1f86de79071eab8c.d
+│       │   ├── zerotrie-985755d221d95289.d
+│       │   ├── zerovec-c0fffd80c8a64ad9.d
+│       │   └── zerovec_derive-c6e46e8abab7a50d.d
+│       ├── examples
+│       └── incremental
+│           ├── build_script_build-16rs9ldgdknh2
+│           │   ├── s-h99um78g38-1uadczh-2ivmeq731zsk428buvbb85bd5
+│           │   │   ├── 3lzan3n0767izdad3qr16okal.o
+│           │   │   ├── 5y77yt22uk6l07uzkb8iq43e1.o
+│           │   │   ├── 6n95wnw3l7z0by9nbwu6k0pui.o
+│           │   │   ├── 6of50gmd1t1ly8hlahttd4vqz.o
+│           │   │   ├── a6nf8rymq4ktopn53q71bm0kx.o
+│           │   │   ├── dep-graph.bin
+│           │   │   ├── query-cache.bin
+│           │   │   └── work-products.bin
+│           │   └── s-h99um78g38-1uadczh.lock
+│           └── scratchtable-0nud9jui1pr12
+│               ├── s-h99umrpftr-0og122h-working
+│               │   └── dep-graph.part.bin
+│               └── s-h99umrpftr-0og122h.lock
+├── tree.txt
+└── vite.config.js
+
+381 directories, 2553 files

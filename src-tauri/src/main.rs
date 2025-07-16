@@ -1,0 +1,50 @@
+{
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "beforeDevCommand": "npm run dev",
+    "devPath": "http://localhost:5173",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "ScratchTable",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "fs": {
+        "all": true
+      },
+      "dialog": {
+        "all": true
+      },
+      "window": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "identifier": "com.scratchtable.app",
+      "targets": "all",
+      "icon": [
+        "icons/icon.png"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "ScratchTable",
+        "width": 800,
+        "minWidth": 400,
+        "minHeight": 300,
+        "center": true
+      }
+    ]
+  }
+}

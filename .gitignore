@@ -344,3 +344,7 @@ vite.config.ts.timestamp-*
 # Misc
 dist/
 src-tauri/target/
+src-tauri/Cargo.lock
+node_modules/
+gen/
+*.log

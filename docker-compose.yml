@@ -1,0 +1,15 @@
+services:
+  scratchtable-dev:
+    build: .
+    ports:
+      - "5173:5173"  # Vite dev server
+      - "1420:1420"  # Tauri dev server
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/target
+    environment:
+      - DISPLAY=${DISPLAY}
+    stdin_open: true
+    tty: true
+    command: npx tauri dev
